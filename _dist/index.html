@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Page | Index</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="shortcut icon" type="image/png" href="favicon.ico">
+		<link rel="stylesheet" href="./css/core.min.css">
+		<link rel="stylesheet" href="./css/main.min.css">
+	</head>
+	<body>
+		<div id="loading-container">
+			<div class="loading-wrapper">
+				<div id="loading-logo"><img src="./assets/loading.svg"></div>
+			</div>
+		</div>
+		<header class="mainHeader mainHeader--index">
+			<div class="container-fluid">
+				<div class="mainWrapper">
+					<div class="header__top d-flex align-center">
+						<div class="header__logo"><a href="/"><img src="./assets/logo.svg"></a></div>
+						<div class="header__search ml-auto">
+							<div class="header__searchIcon"><span class="fal fa-search"></span></div>
+							<form class="header__searchWrapper">
+								<input id="header__search" type="text" name="Search" placeholder="Find Destination">
+								<button class="d-flex flex-center"><span class="fal fa-search"></span></button>
+							</form>
+						</div>
+						<div class="header__makeMyTrip"><a class="text-uppercase" href="make-my-trip.html">Make my trip</a><a href="help.html">Help</a></div>
+						<div class="header__language">
+							<select id="header__language" name="Language">
+								<option>EN</option>
+								<option>VI</option>
+								<option>FR</option>
+							</select>
+						</div>
+						<div class="header__currency"><span>USD ($)</span></div>
+						<div class="header__cart"><a class="header__cartIcon" href="checkout.html"><span class="far fa-shopping-cart"></span><span class="header__cartText desktop">Cart</span><span class="header__cartNumber flex-center d-flex">29</span></a></div>
+						<div class="header__toggleMobile mobile d-flex align-center"><span class="fal fa-bars"></span></div>
+					</div>
+					<div class="header__bottom d-flex align-center">
+						<div class="header__nav d-flex">
+							<div class="header__navItem"><a class="header__navLink" href="/"><span class="fas fa-home-lg-alt"></span><span>HOME</span></a></div>
+							<div class="header__navItem"><a class="header__navLink" href="destination.html"><span>Destination</span></a></div>
+							<div class="header__navItem header__navItem--hasSub"><a class="header__navLink" href="travel-style.html"><span>TRAVEL STYLES</span></a><span class="fal fa-chevron-down js__toggleNavSub"></span>
+								<div class="header__navSub">
+									<div class="js__closeNavSub mobile"><span class="fal fa-chevron-down"></span><span>Back</span></div>
+									<div class="header__navItem"><a class="header__navLink" href="travel-style.html"><span>Day Trip Excursion</span></a></div>
+									<div class="header__navItem"><a class="header__navLink" href="travel-style.html"><span>Walking and Trekking</span></a></div>
+									<div class="header__navItem"><a class="header__navLink" href="travel-style.html"><span>Cultural and Theme Tours</span></a></div>
+									<div class="header__navItem"><a class="header__navLink" href="travel-style.html"><span>Tours and Sightseeing</span></a></div>
+									<div class="header__navItem"><a class="header__navLink" href="travel-style.html"><span>Free and Easy Package</span></a></div>
+								</div>
+							</div>
+							<div class="header__navItem header__navItem--hasSub"><a class="header__navLink" href="#"><span>Travel Services</span></a><span class="fal fa-chevron-down js__toggleNavSub"></span>
+								<div class="header__navSub">
+									<div class="js__closeNavSub mobile"><span class="fal fa-chevron-down"></span><span>Back</span></div>
+									<div class="header__navItem"><a class="header__navLink" href="hotel.html"><span>Hotel</span></a></div>
+									<div class="header__navItem"><a class="header__navLink" href="cruises.html"><span>Cruises</span></a></div>
+									<div class="header__navItem"><a class="header__navLink" href="transportation.html"><span>Transportation</span></a></div>
+									<div class="header__navItem"><a class="header__navLink" href="guide.html"><span>Guide</span></a></div>
+								</div>
+							</div>
+							<div class="header__navItem header__navItem--hasSub"><a class="header__navLink" href="blog.html"><span>Blog</span></a></div>
+							<div class="header__navItem"><a class="header__navLink" href="about.html"><span>About Us</span></a></div>
+						</div>
+						<div class="header__buttons d-flex align-center ml-auto"><a class="btn btn-contact" href="javascript:void(0)" data-fancybox="" data-src="#login">Đăng nhập</a><a class="btn btn-contact" href="contact.html">Contact Us</a></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="backdrop"></div>
+		<div class="header__mobile mobile">
+			<div class="header__mobileWrapper"></div>
+		</div>
+		<section class="agent-login" style="display :none" id="login">
+			<div class="title">
+				<h2 class="main-title">Đăng nhập</h2>
+				<p>Hãy đăng nhập để tiếp tục quy trình</p>
+			</div>
+			<form>
+				<div class="form-wrapper">
+					<div class="form-group">
+						<input type="text" name="" placeholder="User name or Email Address">
+					</div>
+					<div class="form-group">
+						<input type="password" name="" placeholder="Password">
+					</div>
+					<div class="form-group"><a href="#" style="color: #f07c00">Forget Your Password?</a></div>
+					<div class="form-group">
+						<button type="submit">Đăng nhập</button>
+					</div>
+				</div>
+			</form>
+			<div class="login-social">
+				<p>Or connect with:</p>
+				<ul>
+					<li><a class="facebook d-block" href="#"><em class="fab fa-facebook-square"></em><span>Facebook</span></a></li>
+					<li><a class="google d-block" href="#"><em class="fab fa-google"></em><span>Google</span></a></li>
+				</ul>
+				<div class="follow">
+					<p>Chưa có tài khoản?</p><a href="user-registration.html">Cá nhân</a><a href="agency-registration.html">Đại lý</a>
+				</div>
+			</div>
+		</section>
+		<main>
+			<div class="homeBanner">
+				<div class="homeBanner__slider">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide overflow-hidden"><a href="/"><img class="fullsize object-cover" src="./assets/banner_1.jpg"></a></div>
+							<div class="swiper-slide overflow-hidden"><a href="/"><img class="fullsize object-cover" src="./assets/banner_1.jpg"></a></div>
+							<div class="swiper-slide overflow-hidden"><a href="/"><img class="fullsize object-cover" src="./assets/banner_1.jpg"></a></div>
+							<div class="swiper-slide overflow-hidden"><a href="/"><img class="fullsize object-cover" src="./assets/banner_1.jpg"></a></div>
+						</div>
+						<div class="swiper__pagination--banner"></div>
+					</div>
+				</div>
+				<div class="homeBanner__content">
+					<h1>Welcome to ERA</h1>
+				</div>
+			</div>
+			<div class="tourSearch__iconToggle flex-center"><span class="fal fa-calendar-alt"></span></div>
+			<div class="tourSearch">
+				<div class="tourSearch__container desktop">
+					<form class="tourSearch__form d-flex flex-wrap" id="tourSearch__form" action="">
+						<div class="tourSearch__formGroup d-flex">
+							<div class="tourSearch__keyword">
+								<input class="input-control fs-18" type="text" placeholder="Where are you going?">
+							</div>
+							<div class="tourSearch__date datePicker" date-picker>
+								<input class="datePicker__input" type="text" autocomplete="off" data-date-range>
+								<label class="datePicker__label"><span class="fal fa-calendar-alt datePicker__icon"></span><span class="label datePicker__text">Start</span><img class="datePicker__arrow" src="./assets/icons/arrow_long.svg"><span class="label datePicker__text">End</span></label>
+							</div>
+							<div class="tourSearch__select">
+								<select class="input-control fs-18">
+									<option>1 Adults</option>
+									<option>2 Adults</option>
+									<option>1 Children</option>
+								</select>
+							</div>
+						</div>
+						<div class="tourSearch__button">
+							<button class="btn btn__submit--reverse">Find now</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="homePopularDestination pd-80">
+				<div class="container-fluid">
+					<div class="mainWrapper">
+						<div class="section__titleWrapper">
+							<h2 class="homeTitle text-center">Popular Destination</h2>
+							<p class="homeDescription text-center">From historical cities to natural splendours, come see the best of world!</p>
+						</div>
+						<div class="homePopularDestination__slideWrapper popularDestination__js">
+							<div class="swiper-navigations">
+								<div class="swiper__btn swiper__btn--1 swiper__btn--prev">
+									<div class="far fa-chevron-left"></div>
+								</div>
+								<div class="swiper__btn swiper__btn--1 swiper__btn--next">
+									<div class="far fa-chevron-right"></div>
+								</div>
+							</div>
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><a class="destinationItem--1 d-block overflow-hidden" href="/premade-tour.html">
+											<div class="destinationItem__img"><img class="fullsize object-cover" src="./assets/destinations/1.jpg"></div>
+											<div class="destinationItem__content">
+												<h4 class="destinationItem__title">Bai Dinh Pagoda</h4>
+												<p class="destinationItem__description"><span class="fas fa-map-marker-alt"></span><span class="fs-14">Ninh Binh Province, Vietnam</span></p>
+											</div></a></div>
+									<div class="swiper-slide"><a class="destinationItem--1 d-block overflow-hidden" href="/premade-tour.html">
+											<div class="destinationItem__img"><img class="fullsize object-cover" src="./assets/destinations/2.jpg"></div>
+											<div class="destinationItem__content">
+												<h4 class="destinationItem__title">Bai Dinh Pagoda</h4>
+												<p class="destinationItem__description"><span class="fas fa-map-marker-alt"></span><span class="fs-14">Ninh Binh Province, Vietnam</span></p>
+											</div></a></div>
+									<div class="swiper-slide"><a class="destinationItem--1 d-block overflow-hidden" href="/premade-tour.html">
+											<div class="destinationItem__img"><img class="fullsize object-cover" src="./assets/destinations/3.jpg"></div>
+											<div class="destinationItem__content">
+												<h4 class="destinationItem__title">Bai Dinh Pagoda</h4>
+												<p class="destinationItem__description"><span class="fas fa-map-marker-alt"></span><span class="fs-14">Ninh Binh Province, Vietnam</span></p>
+											</div></a></div>
+									<div class="swiper-slide"><a class="destinationItem--1 d-block overflow-hidden" href="/premade-tour.html">
+											<div class="destinationItem__img"><img class="fullsize object-cover" src="./assets/destinations/4.jpg"></div>
+											<div class="destinationItem__content">
+												<h4 class="destinationItem__title">Bai Dinh Pagoda</h4>
+												<p class="destinationItem__description"><span class="fas fa-map-marker-alt"></span><span class="fs-14">Ninh Binh Province, Vietnam</span></p>
+											</div></a></div>
+									<div class="swiper-slide"><a class="destinationItem--1 d-block overflow-hidden" href="/premade-tour.html">
+											<div class="destinationItem__img"><img class="fullsize object-cover" src="./assets/destinations/2.jpg"></div>
+											<div class="destinationItem__content">
+												<h4 class="destinationItem__title">Bai Dinh Pagoda</h4>
+												<p class="destinationItem__description"><span class="fas fa-map-marker-alt"></span><span class="fs-14">Ninh Binh Province, Vietnam</span></p>
+											</div></a></div>
+								</div>
+								<div class="swiper__pagination index__swiper__pagination"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="charmingDestination pb-80">
+				<div class="container-fluid">
+					<div class="mainWrapper">
+						<div class="section__titleWrapper">
+							<h2 class="homeTitle text-center">Charming Destination</h2>
+							<p class="homeDescription text-center">From historical cities to natural splendours, come to see the best visited places!</p>
+						</div>
+						<div class="charmingDestination__slideWrapper">
+							<div class="index__swiper-navigations desktop">
+								<div class="swiper__btn--prev swiper__btn swiper__btn--1 shadow--1">
+									<div class="far fa-chevron-left"></div>
+								</div>
+								<div class="swiper__btn--next swiper__btn swiper__btn--1 shadow--1">
+									<div class="far fa-chevron-right"></div>
+								</div>
+							</div>
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><a class="tourNewsItem" href="/premade-tour.html">
+											<div class="tourNewsItem__img overflow-hidden"><img class="fullsize object-cover" src="./assets/destinations/5.jpg"></div>
+											<div class="tourNewsItem__content">
+												<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+												<div class="tourNewsItem__rating rating__bar">
+													<div class="star"></div>
+													<div class="star__color" data-rating="0.7"></div>
+												</div>
+												<div class="tourNewsItem__bottom">
+													<div class="tourNewsItem__price"><span>From </span><b>$500</b></div><span class="btn btn__submit">See more</span>
+												</div>
+											</div></a></div>
+									<div class="swiper-slide"><a class="tourNewsItem" href="/premade-tour.html">
+											<div class="tourNewsItem__img overflow-hidden"><img class="fullsize object-cover" src="./assets/destinations/6.jpg"></div>
+											<div class="tourNewsItem__content">
+												<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+												<div class="tourNewsItem__rating rating__bar">
+													<div class="star"></div>
+													<div class="star__color" data-rating="0.7"></div>
+												</div>
+												<div class="tourNewsItem__bottom">
+													<div class="tourNewsItem__price"><span>From </span><b>$500</b></div><span class="btn btn__submit">See more</span>
+												</div>
+											</div></a></div>
+									<div class="swiper-slide"><a class="tourNewsItem" href="/premade-tour.html">
+											<div class="tourNewsItem__img overflow-hidden"><img class="fullsize object-cover" src="./assets/destinations/7.jpg"></div>
+											<div class="tourNewsItem__content">
+												<h4 class="tourNewsItem__title">Ha Long Ha Long Bay, Vietnam</h4>
+												<div class="tourNewsItem__rating rating__bar">
+													<div class="star"></div>
+													<div class="star__color" data-rating="0.7"></div>
+												</div>
+												<div class="tourNewsItem__bottom">
+													<div class="tourNewsItem__price"><span>From </span><b>$500</b></div><span class="btn btn__submit">See more</span>
+												</div>
+											</div></a></div>
+									<div class="swiper-slide"><a class="tourNewsItem" href="/premade-tour.html">
+											<div class="tourNewsItem__img overflow-hidden"><img class="fullsize object-cover" src="./assets/destinations/8.jpg"></div>
+											<div class="tourNewsItem__content">
+												<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+												<div class="tourNewsItem__rating rating__bar">
+													<div class="star"></div>
+													<div class="star__color" data-rating="0.7"></div>
+												</div>
+												<div class="tourNewsItem__bottom">
+													<div class="tourNewsItem__price"><span>From </span><b>$500</b></div><span class="btn btn__submit">See more</span>
+												</div>
+											</div></a></div>
+									<div class="swiper-slide"><a class="tourNewsItem" href="/premade-tour.html">
+											<div class="tourNewsItem__img overflow-hidden"><img class="fullsize object-cover" src="./assets/destinations/5.jpg"></div>
+											<div class="tourNewsItem__content">
+												<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+												<div class="tourNewsItem__rating rating__bar">
+													<div class="star"></div>
+													<div class="star__color" data-rating="0.7"></div>
+												</div>
+												<div class="tourNewsItem__bottom">
+													<div class="tourNewsItem__price"><span>From </span><b>$500</b></div><span class="btn btn__submit">See more</span>
+												</div>
+											</div></a></div>
+								</div>
+								<div class="swiper__pagination index__swiper__pagination"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="testimonials pb-80">
+				<div class="container-fluid">
+					<div class="mainWrapper pt-80">
+						<div class="section__titleWrapper">
+							<h2 class="homeTitle text-center">Testimonials</h2>
+						</div>
+						<div class="testimonials__slideWrapper">
+							<div class="index__swiper-navigations desktop">
+								<div class="swiper__btn swiper__btn--1 swiper__btn--prev shadow--1">
+									<div class="far fa-chevron-left"></div>
+								</div>
+								<div class="swiper__btn swiper__btn--1 swiper__btn--next shadow--1">
+									<div class="far fa-chevron-right"></div>
+								</div>
+							</div>
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><a class="tourNewsItem" href="#">
+											<div class="tourNewsItem__img overflow-hidden"><img class="fullsize object-cover" src="./assets/destinations/5.jpg"></div>
+											<div class="tourNewsItem__content">
+												<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+												<div class="tourNewsItem__rating rating__bar">
+													<div class="star"></div>
+													<div class="star__color" data-rating="0.7"></div>
+												</div>
+												<div class="tourNewsItem__review d-flex align-center">
+													<div class="tourNewsItem__reviewContent">
+														<p>reviewed by Galina – Netherlands</p>
+														<time>March 5, 2020</time>
+													</div>
+													<div class="tourNewsItem__reviewFlag"><img src="./assets/flag.svg" alt=""></div>
+												</div>
+												<div class="tourNewsItem__description">
+													<p>Well done route, captain - SUPER! It is very welcoming and friendly, which lifts the mood and the series</p>
+												</div>
+												<div class="tourNewsItem__button"><span class="fs-16 fw-700" href="#">See more</span></div>
+											</div></a></div>
+									<div class="swiper-slide"><a class="tourNewsItem" href="#">
+											<div class="tourNewsItem__img overflow-hidden"><img class="fullsize object-cover" src="./assets/destinations/6.jpg"></div>
+											<div class="tourNewsItem__content">
+												<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+												<div class="tourNewsItem__rating rating__bar">
+													<div class="star"></div>
+													<div class="star__color" data-rating="0.7"></div>
+												</div>
+												<div class="tourNewsItem__review d-flex align-center">
+													<div class="tourNewsItem__reviewContent">
+														<p>reviewed by Galina – Netherlands</p>
+														<time>March 5, 2020</time>
+													</div>
+													<div class="tourNewsItem__reviewFlag"><img src="./assets/flag.svg" alt=""></div>
+												</div>
+												<div class="tourNewsItem__description">
+													<p>Well done route, captain - SUPER! It is very welcoming and friendly, which lifts the mood and the series of houses of wonderful architecture seems even more beautiful and leaves just a fabulous impression of Amsterdam. Ron and Nel in the form of a cheerful dialogue told interesting stories about Amsterdam and its inhabitants. Loved the tour and attractive price…</p>
+												</div>
+												<div class="tourNewsItem__button"><span class="fs-16 fw-700" href="#">See more</span></div>
+											</div></a></div>
+									<div class="swiper-slide"><a class="tourNewsItem" href="#">
+											<div class="tourNewsItem__img overflow-hidden"><img class="fullsize object-cover" src="./assets/destinations/7.jpg"></div>
+											<div class="tourNewsItem__content">
+												<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+												<div class="tourNewsItem__rating rating__bar">
+													<div class="star"></div>
+													<div class="star__color" data-rating="0.7"></div>
+												</div>
+												<div class="tourNewsItem__review d-flex align-center">
+													<div class="tourNewsItem__reviewContent">
+														<p>reviewed by Galina – Netherlands</p>
+														<time>March 5, 2020</time>
+													</div>
+													<div class="tourNewsItem__reviewFlag"><img src="./assets/flag.svg" alt=""></div>
+												</div>
+												<div class="tourNewsItem__description">
+													<p>Well done route, captain - SUPER! It is very welcoming and friendly, which lifts the mood and the series of houses of wonderful architecture seems even more beautiful and leaves just a fabulous impression of Amsterdam. Ron and Nel in the form of a cheerful dialogue told interesting stories about Amsterdam and its inhabitants. Loved the tour and attractive price…</p>
+												</div>
+												<div class="tourNewsItem__button"><span class="fs-16 fw-700" href="#">See more</span></div>
+											</div></a></div>
+									<div class="swiper-slide"><a class="tourNewsItem" href="#">
+											<div class="tourNewsItem__img overflow-hidden"><img class="fullsize object-cover" src="./assets/destinations/8.jpg"></div>
+											<div class="tourNewsItem__content">
+												<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+												<div class="tourNewsItem__rating rating__bar">
+													<div class="star"></div>
+													<div class="star__color" data-rating="0.7"></div>
+												</div>
+												<div class="tourNewsItem__review d-flex align-center">
+													<div class="tourNewsItem__reviewContent">
+														<p>reviewed by Galina – Netherlands</p>
+														<time>March 5, 2020</time>
+													</div>
+													<div class="tourNewsItem__reviewFlag"><img src="./assets/flag.svg" alt=""></div>
+												</div>
+												<div class="tourNewsItem__description">
+													<p>Well done route, captain - SUPER! It is very welcoming and friendly, which lifts the mood and the series of houses of wonderful architecture seems even more beautiful and leaves just a fabulous impression of Amsterdam. Ron and Nel in the form of a cheerful dialogue told interesting stories about Amsterdam and its inhabitants. Loved the tour and attractive price…</p>
+												</div>
+												<div class="tourNewsItem__button"><span class="fs-16 fw-700" href="#">See more</span></div>
+											</div></a></div>
+									<div class="swiper-slide"><a class="tourNewsItem" href="#">
+											<div class="tourNewsItem__img overflow-hidden"><img class="fullsize object-cover" src="./assets/destinations/5.jpg"></div>
+											<div class="tourNewsItem__content">
+												<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+												<div class="tourNewsItem__rating rating__bar">
+													<div class="star"></div>
+													<div class="star__color" data-rating="0.7"></div>
+												</div>
+												<div class="tourNewsItem__review d-flex align-center">
+													<div class="tourNewsItem__reviewContent">
+														<p>reviewed by Galina – Netherlands</p>
+														<time>March 5, 2020</time>
+													</div>
+													<div class="tourNewsItem__reviewFlag"><img src="./assets/flag.svg" alt=""></div>
+												</div>
+												<div class="tourNewsItem__description">
+													<p>Well done route, captain - SUPER! It is very welcoming and friendly, which lifts the mood and the series of houses of wonderful architecture seems even more beautiful and leaves just a fabulous impression of Amsterdam. Ron and Nel in the form of a cheerful dialogue told interesting stories about Amsterdam and its inhabitants. Loved the tour and attractive price…</p>
+												</div>
+												<div class="tourNewsItem__button"><span class="fs-16 fw-700" href="#">See more</span></div>
+											</div></a></div>
+								</div>
+								<div class="swiper__pagination index__swiper__pagination"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="indexNews pb-80">
+				<div class="container-fluid">
+					<div class="mainWrapper pt-80">
+						<div class="section__titleWrapper">
+							<h2 class="homeTitle text-center">News</h2>
+						</div>
+						<div class="indexNews__slideWrapper">
+							<div class="index__swiper-navigations desktop">
+								<div class="swiper__btn swiper__btn--1 swiper__btn--prev shadow--1">
+									<div class="far fa-chevron-left"></div>
+								</div>
+								<div class="swiper__btn swiper__btn--1 swiper__btn--next shadow--1">
+									<div class="far fa-chevron-right"></div>
+								</div>
+							</div>
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="tourNewsItem">
+											<div class="tourNewsItem__img overflow-hidden"><a href="/blog-detail.html"><img class="fullsize object-cover" src="./assets/destinations/5.jpg"></a></div>
+											<div class="tourNewsItem__content">
+												<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+												<div class="tourNewsItem__rating rating__bar">
+													<div class="star"></div>
+													<div class="star__color" data-rating="0.7"></div>
+												</div>
+												<div class="tourNewsItem__review d-flex align-center">
+													<div class="tourNewsItem__reviewContent">
+														<p>By Xu Kien - July 26, 2020</p>
+													</div>
+												</div>
+												<div class="tourNewsItem__socials"><a href="#"><img src="./assets/icons/news_facebook.svg"></a><a href="#"><img src="./assets/icons/news_twitter.svg"></a><a href="#"><img src="./assets/icons/news_other.svg"></a></div>
+												<div class="tourNewsItem__description">
+													<p>Well done route, captain - SUPER! It is very welcoming and friendly, which lifts the mood and the series</p>
+												</div>
+												<div class="tourNewsItem__button"><a class="fs-16 fw-700" href="/blog-detail.html">See more</a></div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="tourNewsItem">
+											<div class="tourNewsItem__img overflow-hidden"><a href="/blog-detail.html"><img class="fullsize object-cover" src="./assets/destinations/6.jpg"></a></div>
+											<div class="tourNewsItem__content">
+												<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+												<div class="tourNewsItem__rating rating__bar">
+													<div class="star"></div>
+													<div class="star__color" data-rating="0.7"></div>
+												</div>
+												<div class="tourNewsItem__review d-flex align-center">
+													<div class="tourNewsItem__reviewContent">
+														<p>By Xu Kien - July 26, 2020</p>
+													</div>
+												</div>
+												<div class="tourNewsItem__socials"><a href="#"><img src="./assets/icons/news_facebook.svg"></a><a href="#"><img src="./assets/icons/news_twitter.svg"></a><a href="#"><img src="./assets/icons/news_other.svg"></a></div>
+												<div class="tourNewsItem__description">
+													<p>Well done route, captain - SUPER! It is very welcoming and friendly, which lifts the mood and the series of houses of wonderful architecture seems even more beautiful and leaves just a fabulous impression of Amsterdam. Ron and Nel in the form of a cheerful dialogue told interesting stories about Amsterdam and its inhabitants. Loved the tour and attractive price…</p>
+												</div>
+												<div class="tourNewsItem__button"><a class="fs-16 fw-700" href="/blog-detail.html">See more</a></div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="tourNewsItem">
+											<div class="tourNewsItem__img overflow-hidden"><a href="/blog-detail.html"><img class="fullsize object-cover" src="./assets/destinations/7.jpg"></a></div>
+											<div class="tourNewsItem__content">
+												<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+												<div class="tourNewsItem__rating rating__bar">
+													<div class="star"></div>
+													<div class="star__color" data-rating="0.7"></div>
+												</div>
+												<div class="tourNewsItem__review d-flex align-center">
+													<div class="tourNewsItem__reviewContent">
+														<p>By Xu Kien - July 26, 2020</p>
+													</div>
+												</div>
+												<div class="tourNewsItem__socials"><a href="#"><img src="./assets/icons/news_facebook.svg"></a><a href="#"><img src="./assets/icons/news_twitter.svg"></a><a href="#"><img src="./assets/icons/news_other.svg"></a></div>
+												<div class="tourNewsItem__description">
+													<p>Well done route, captain - SUPER! It is very welcoming and friendly, which lifts the mood and the series of houses of wonderful architecture seems even more beautiful and leaves just a fabulous impression of Amsterdam. Ron and Nel in the form of a cheerful dialogue told interesting stories about Amsterdam and its inhabitants. Loved the tour and attractive price…</p>
+												</div>
+												<div class="tourNewsItem__button"><a class="fs-16 fw-700" href="/blog-detail.html">See more</a></div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="tourNewsItem">
+											<div class="tourNewsItem__img overflow-hidden"><a href="/blog-detail.html"><img class="fullsize object-cover" src="./assets/destinations/7.jpg"></a></div>
+											<div class="tourNewsItem__content">
+												<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+												<div class="tourNewsItem__rating rating__bar">
+													<div class="star"></div>
+													<div class="star__color" data-rating="0.7"></div>
+												</div>
+												<div class="tourNewsItem__review d-flex align-center">
+													<div class="tourNewsItem__reviewContent">
+														<p>By Xu Kien - July 26, 2020</p>
+													</div>
+												</div>
+												<div class="tourNewsItem__socials"><a href="#"><img src="./assets/icons/news_facebook.svg"></a><a href="#"><img src="./assets/icons/news_twitter.svg"></a><a href="#"><img src="./assets/icons/news_other.svg"></a></div>
+												<div class="tourNewsItem__description">
+													<p>Well done route, captain - SUPER! It is very welcoming and friendly, which lifts the mood and the series of houses of wonderful architecture seems even more beautiful and leaves just a fabulous impression of Amsterdam. Ron and Nel in the form of a cheerful dialogue told interesting stories about Amsterdam and its inhabitants. Loved the tour and attractive price…</p>
+												</div>
+												<div class="tourNewsItem__button"><a class="fs-16 fw-700" href="/blog-detail.html">See more</a></div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="tourNewsItem">
+											<div class="tourNewsItem__img overflow-hidden"><a href="/blog-detail.html"><img class="fullsize object-cover" src="./assets/destinations/7.jpg"></a></div>
+											<div class="tourNewsItem__content">
+												<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+												<div class="tourNewsItem__rating rating__bar">
+													<div class="star"></div>
+													<div class="star__color" data-rating="0.7"></div>
+												</div>
+												<div class="tourNewsItem__review d-flex align-center">
+													<div class="tourNewsItem__reviewContent">
+														<p>By Xu Kien - July 26, 2020</p>
+													</div>
+												</div>
+												<div class="tourNewsItem__socials"><a href="#"><img src="./assets/icons/news_facebook.svg"></a><a href="#"><img src="./assets/icons/news_twitter.svg"></a><a href="#"><img src="./assets/icons/news_other.svg"></a></div>
+												<div class="tourNewsItem__description">
+													<p>Well done route, captain - SUPER! It is very welcoming and friendly, which lifts the mood and the series of houses of wonderful architecture seems even more beautiful and leaves just a fabulous impression of Amsterdam. Ron and Nel in the form of a cheerful dialogue told interesting stories about Amsterdam and its inhabitants. Loved the tour and attractive price…</p>
+												</div>
+												<div class="tourNewsItem__button"><a class="fs-16 fw-700" href="/blog-detail.html">See more</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper__pagination index__swiper__pagination"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="indexContact">
+				<div class="container-fluid pb-80">
+					<div class="mainWrapper">
+						<div class="indexContact__content text-center"><a class="btn btn__submit--reverse text-uppercase" href="/contact.html">Contact Us</a>
+							<p>Want to find out how Era can solve problems specifict to your travel? Let’s talk</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__subBanner"><img class="lazyload blur-up" data-src="./assets/banner_2.jpg"></div>
+			<div class="index-page" id="js-page-verify" hidden></div>
+		</main>
+		<footer>
+			<div class="container-fluid">
+				<div class="mainWrapper pt-80">
+					<div class="row">
+						<div class="col-md-6 col-xl-3 fs-16">
+							<h4 class="text-uppercase">ERA CO.,LTD</h4>
+							<p>Address: 34 Lo 7, Den Lu 1, Hoang Mai Dist, Hanoi, Vietnam</p>
+							<p>Email: info@eratour.vn</p>
+							<p>Phone: (+84-24) 3622 7195 / 3622 7752</p>
+							<p>Hotline: +84 90 341 1916</p><br>
+							<h4 class="text-uppercase">ERIC MICHELI</h4>
+							<p>Phone: +33 06 11 64 77 25</p>
+							<p>Email: eric@explorerealasia.com</p>
+							<ul class="footer__socials d-flex align-center">
+								<li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+								<li><a href="#"><em class="fab fa-twitter"></em></a></li>
+								<li><a href="#"><em class="fab fa-youtube"></em></a></li>
+								<li><a href="#"><em class="fab fa-instagram"></em></a></li>
+								<li><a href="#"><em class="fab fa-tripadvisor"></em></a></li>
+							</ul>
+						</div>
+						<div class="col-md-6 col-xl-3 fs-16">
+							<h4 class="text-uppercase">OUR INDUSTRY AFFILIATIONS AND PARTNERSHIPS</h4>
+							<p>And we are really proud of them</p><br>
+							<div class="footer__list"><a class="d-flex align-center" href="#">SHIFA TRAVELS <span class="fal fa-external-link-alt"></span></a><a class="d-flex align-center" href="#">VNHOLIDAYS.COM <span class="fal fa-external-link-alt"></span></a><a class="d-flex align-center" href="#">COUNTRY TRAVEL DISCOVERIES <span class="fal fa-external-link-alt"></span></a><a class="d-flex align-center" href="#">VIETNAM TIMELESS CHARM <span class="fal fa-external-link-alt"></span></a></div>
+						</div>
+						<div class="col-md-6 col-xl-3 fs-16">
+							<h4 class="text-uppercase">Stay in the loop</h4>
+							<p>The latest travel tips and insider insights delivered straight to your inbox.</p>
+							<form class="footer__form">
+								<div class="form-group">
+									<input class="form-control" type="text" placeholder="First name">
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="text" placeholder="Last name">
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="text" placeholder="Email">
+								</div>
+								<div class="form-button">
+									<button class="btn btn__submit">Subscribe</button>
+								</div>
+							</form>
+						</div>
+						<div class="col-md-6 col-xl-3"><img src="./assets/footer_rate.jpg"></div>
+					</div>
+					<div class="copy-right">
+						<div class="payment"><img src="./assets/payment.png" alt=""></div>
+						<div class="list-link">
+							<div class="text__item"><a href="#">© 2020 ERA. All rights reserved</a></div>
+							<div class="text__item"><a href="#">Privacy</a></div>
+							<div class="text__item"><a href="#">Terms</a></div>
+							<div class="text__item"><a href="#">Sitemap</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="./js/core.min.js"></script>
+		<script type="text/javascript" src="./js/main.min.js"></script>
+	</body>
+</html>

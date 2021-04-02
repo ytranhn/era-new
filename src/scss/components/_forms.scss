@@ -1,0 +1,378 @@
+.form__group--type-1 {
+	&:not(.form__group--date) {
+		label {
+			overflow: hidden;
+		}
+	}
+	label {
+		position: relative;
+		height: 80px;
+		display: block;
+		border: 1px solid #b0b0b0;
+		border-radius: 6px;
+		padding-top: 30px;
+	}
+	.form__title {
+		position: absolute;
+		bottom: 50px;
+		left: 25px;
+		font-size: 1.2rem;
+		color: map-get($color, text);
+	}
+	.form__control {
+		height: 100%;
+		padding: 10px 25px;
+		font-size: 1.5rem;
+		font-weight: 300;
+		width: 100%;
+	}
+}
+
+.form__group--type-2 {
+	width: 100%;
+	span {
+		font-size: 2rem;
+		color: map-get($color, text);
+		margin-bottom: 5px;
+		display: block;
+	}
+	.input__group {
+		border: 1px solid #dddddd;
+		position: relative;
+		overflow: hidden;
+		border-radius: 8px;
+		input,
+		select {
+			height: 65px;
+			width: 100%;
+			font-size: 2rem;
+			padding: 7px 15px;
+			@media (max-width: 1199.98px) {
+				height: 65px;
+				padding: 10px 15px;
+			}
+			@media (max-width: 767.98px) {
+				height: 50px;
+				padding: 7px 10px;
+			}
+		}
+	}
+	.input__hasSelect {
+		select {
+			position: absolute;
+			width: 140px;
+			top: 0;
+			left: 0;
+			border-right: 1px solid #dddddd;
+		}
+		input {
+			padding-left: 155px;
+		}
+	}
+}
+
+.datePicker {
+	position: relative;
+	width: 230px;
+	.datePicker__input[type='text'] {
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		padding: 10px 20px;
+	}
+	.datePicker__label {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		display: flex;
+		align-items: center;
+		pointer-events: none;
+		padding: 10px 20px;
+	}
+	.datePicker__icon {
+		color: map-get($color, main);
+		font-size: 2rem;
+		margin-right: 10px;
+	}
+	.datePicker__text {
+		font-size: 1.6rem;
+		color: #b0b0b0;
+		text-transform: capitalize;
+	}
+	.datePicker__arrow {
+		margin: 0 10px;
+	}
+
+	&.dirtied {
+		.datePicker__input[type='text'] {
+			transition: all 0.3s ease;
+			opacity: 1;
+		}
+		.datePicker__label {
+			opacity: 0;
+		}
+	}
+}
+
+.form__checkbox--custom-1 {
+	user-select: none;
+	min-height: 20px;
+	cursor: pointer;
+	input[type='checkbox'],
+	input[type='radio'] {
+		display: none;
+	}
+	> span {
+		position: relative;
+		padding-left: 35px;
+		display: block;
+		font-size: 1.5rem;
+		&:before {
+			position: absolute;
+			left: 0;
+			top: 5px;
+			width: 20px;
+			height: 20px;
+			border-radius: 4px;
+			border: 1px solid #b0b0b0;
+			content: '';
+		}
+	}
+	> .tourDetailType__content {
+		padding-left: 35px;
+		position: relative;
+		display: block;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 1;
+		font-size: 1.8rem;
+		// font-weight: 700;
+		line-height: 24px;
+		&:before {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 24px;
+			height: 24px;
+			border-radius: 4px;
+			border: 1px solid #b0b0b0;
+			content: '';
+		}
+	}
+	input[type='checkbox']:checked ~ span:before,
+	input[type='checkbox']:checked ~ .tourDetailType__content:before,
+	input[type='radio']:checked ~ span:before,
+	input[type='radio']:checked ~ .tourDetailType__content:before {
+		content: '\f00c';
+		font-family: 'Font Awesome 5 Pro';
+		font-weight: 100;
+		color: map-get($color, trang);
+		border: 1px solid map-get($color, main);
+		background-color: map-get($color, main);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.form__radio--custom-1 {
+	user-select: none;
+	min-height: 24px;
+	input[type='radio'] {
+		display: none;
+	}
+	> span,
+	.tourDetailType__content {
+		padding-left: 35px;
+		position: relative;
+		display: block;
+		cursor: pointer;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 1;
+		font-size: 1.8rem;
+		line-height: 24px;
+		&:before {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 24px;
+			height: 24px;
+			border-radius: 50%;
+			border: 1px solid #b0b0b0;
+			content: '';
+		}
+	}
+	input[type='radio']:checked ~ span:before,
+	input[type='radio']:checked ~ .tourDetailType__content:before {
+		color: map-get($color, trang);
+		border: 8px solid map-get($color, main);
+		background-color: map-get($color, trang);
+	}
+}
+
+.form-wrapper {
+	p {
+		font-size: 2rem;
+		color: #333;
+		@media (max-width: 575.98px) {
+			font-size: 1.6rem;
+		}
+	}
+	.form-title {
+		font-size: 2rem;
+		padding-bottom: 20px;
+		color: map-get($color, text);
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	.form-checked {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media (max-width: 575.98px) {
+			flex-wrap: wrap;
+			.form-group {
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+		}
+		input {
+			display: none;
+		}
+		label {
+			font-size: 1.6rem;
+			color: #333;
+			font-weight: 700;
+			display: flex;
+			align-items: center;
+			&::before {
+				content: '\f04d';
+				font-family: 'Font Awesome 5 Pro';
+				font-size: 24px;
+				margin-right: 10px;
+				font-weight: 500;
+			}
+		}
+		input:checked ~ label {
+			&::before {
+				content: '\f14a';
+				color: map-get($color, main);
+				font-weight: 700;
+			}
+		}
+	}
+	.form-group {
+		margin-bottom: 20px;
+		.select {
+			select {
+				appearance: none;
+				&:invalid {
+					color: #b0b0b0 !important;
+				}
+			}
+			position: relative;
+			&:after {
+				content: '\f078';
+				position: absolute;
+				top: 50%;
+				right: 20px;
+				transform: translateY(-50%);
+				pointer-events: none;
+				font-family: 'Font Awesome 5 Pro';
+				font-size: 32px;
+				@media (max-width: 575.98px) {
+					font-size: 24px;
+				}
+			}
+		}
+		input[type='text'],
+		input[type='email'],
+		input[type='password'],
+		input[type='date'],
+		input[type='number'],
+		select,
+		textarea {
+			width: 100%;
+			height: 79px;
+			padding: 0 20px;
+			border-radius: 12px;
+			border: 1px solid #d6d6d6;
+			box-shadow: 0 0 10px 0 rgba(#000, 0.1);
+			color: #b0b0b0;
+			font-size: 2rem;
+			font-weight: 600;
+			color: #333333;
+			&::placeholder {
+				color: #b0b0b0;
+			}
+		}
+		textarea {
+			width: 100%;
+			height: 300px;
+			padding: 20px;
+		}
+		label {
+			font-size: 2rem;
+			color: #333;
+			display: block;
+			margin-bottom: 10px;
+			@media (max-width: 575.98px) {
+				font-size: 1.5rem;
+			}
+		}
+		button {
+			width: 100%;
+			max-width: 285px;
+			height: 80px;
+			padding: 0 20px;
+			background: map-get($color, main);
+			color: map-get($color, trang);
+			border-radius: 8px;
+			text-transform: uppercase;
+		}
+		.button {
+			@media (max-width: 1024.98px) {
+				text-align: center;
+			}
+			@media (max-width: 575.98px) {
+				button {
+					max-width: 100%;
+				}
+			}
+		}
+		@media (max-width: 575.98px) {
+			input[type='text'],
+			input[type='email'],
+			input[type='password'],
+			input[type='date'],
+			input[type='number'],
+			select {
+				height: 49px;
+				&::placeholder {
+					font-size: 1.6rem;
+				}
+			}
+			textarea {
+				height: 150px;
+				&::placeholder {
+					font-size: 1.6rem;
+				}
+			}
+			button {
+				height: 50px;
+			}
+		}
+	}
+	@media (max-width: 575.98px) {
+		a {
+			font-size: 3rem;
+		}
+	}
+}

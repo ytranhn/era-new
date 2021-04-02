@@ -1,0 +1,196 @@
+.filterContainer
+	.filter__mobileToggle.mobile
+		span Filter
+		span.fal.fa-filter
+	.filter__wrapper
+		.filter__close.mobile
+			span.fal.fa-times
+		.tourNewsNavigation
+			.tourNewsNavigation__title
+				p Destination
+			.tourNewsNavigation__list
+				.tourNewsNavigation__item
+					label.form__checkbox--custom-1
+						input(type="checkbox")
+						span Vietnam
+				.tourNewsNavigation__item
+					label.form__checkbox--custom-1
+						input(type="checkbox")
+						span Laos
+				.tourNewsNavigation__item
+					label.form__checkbox--custom-1
+						input(type="checkbox")
+						span Cambodia
+				.tourNewsNavigation__item
+					label.form__checkbox--custom-1
+						input(type="checkbox")
+						span Myanma
+				.tourNewsNavigation__item
+					a.tourNewsNavigation__link.tourNewsNavigation--seeAll(href="#") See All 
+		.tourNewsNavigation
+			.tourNewsNavigation__title
+				p Deals
+			.tourNewsNavigation__list
+				.tourNewsNavigation__item
+					label.form__checkbox--custom-1
+						input(type="checkbox")
+						span Free cancellation
+				.tourNewsNavigation__item
+					label.form__checkbox--custom-1
+						input(type="checkbox")
+						span Reserve now, pay at stay
+				.tourNewsNavigation__item
+					label.form__checkbox--custom-1
+						input(type="checkbox")
+						span Properties with special offers
+		.tourNewsNavigation
+			.tourNewsNavigation__title
+				p Price (USD)/night
+			.tourNewsNavigation__list.tourNewsNavigation__list--priceSlider
+				.priceSlider__group.priceSlider__group--min
+					label Min
+					input#priceSlider__result--min(type="text" value="0.00")
+				.priceSlider__group.priceSlider__group--max
+					label Max
+					input#priceSlider__result--max(type="text" value="10000.00")
+			.tourNewsNavigation__list.tourNewsNavigation__list--priceBar
+				.priceSlider__bar#priceSlider__bar(data-min="0" data-max="10000" data-step="10" data-current-min="0" data-current-max="10000")
+		.tourNewsNavigation
+			.tourNewsNavigation__title
+				p Traveler rating
+			.tourNewsNavigation__list
+				.tourNewsNavigation__item.tourNewsNavigation__item--stars
+					label.form__checkbox--custom-1
+						input(type="radio" name="Star")
+						span.form__checkbox--stars
+							i.fas.fa-star(style="--star-color:#FFCC00")
+							i.fas.fa-star(style="--star-color:#FFCC00")
+							i.fas.fa-star(style="--star-color:#FFCC00")
+							i.fas.fa-star(style="--star-color:#FFCC00")
+							i.fas.fa-star(style="--star-color:#FFCC00")
+				.tourNewsNavigation__item.tourNewsNavigation__item--stars
+					label.form__checkbox--custom-1
+						input(type="radio" name="Star")
+						span.form__checkbox--stars
+							i.fas.fa-star(style="--star-color:#FFCC00")
+							i.fas.fa-star(style="--star-color:#FFCC00")
+							i.fas.fa-star(style="--star-color:#FFCC00")
+							i.fas.fa-star(style="--star-color:#FFCC00")
+							i.fas.fa-star(style="--star-color:#D6D6D6")
+				.tourNewsNavigation__item.tourNewsNavigation__item--stars
+					label.form__checkbox--custom-1
+						input(type="radio" name="Star")
+						span.form__checkbox--stars
+							i.fas.fa-star(style="--star-color:#FFCC00")
+							i.fas.fa-star(style="--star-color:#FFCC00")
+							i.fas.fa-star(style="--star-color:#FFCC00")
+							i.fas.fa-star(style="--star-color:#D6D6D6")
+							i.fas.fa-star(style="--star-color:#D6D6D6")
+				.tourNewsNavigation__item.tourNewsNavigation__item--stars
+					label.form__checkbox--custom-1
+						input(type="radio" name="Star")
+						span.form__checkbox--stars
+							i.fas.fa-star(style="--star-color:#FFCC00")
+							i.fas.fa-star(style="--star-color:#FFCC00")
+							i.fas.fa-star(style="--star-color:#D6D6D6")
+							i.fas.fa-star(style="--star-color:#D6D6D6")
+							i.fas.fa-star(style="--star-color:#D6D6D6")
+				.tourNewsNavigation__item.tourNewsNavigation__item--stars
+					label.form__checkbox--custom-1
+						input(type="radio" name="Star")
+						span.form__checkbox--stars
+							i.fas.fa-star(style="--star-color:#FFCC00")
+							i.fas.fa-star(style="--star-color:#D6D6D6")
+							i.fas.fa-star(style="--star-color:#D6D6D6")
+							i.fas.fa-star(style="--star-color:#D6D6D6")
+							i.fas.fa-star(style="--star-color:#D6D6D6")
+		.tourNewsNavigation
+			.tourNewsNavigation__title
+				p Property types
+			.tourNewsNavigation__list
+				.tourNewsNavigation__item
+					label.form__checkbox--custom-1
+						input(type="checkbox")
+						span Hotels
+				.tourNewsNavigation__item
+					label.form__checkbox--custom-1
+						input(type="checkbox")
+						span B&B &Inns
+				.tourNewsNavigation__item
+					label.form__checkbox--custom-1
+						input(type="checkbox")
+						span Apartment
+				.tourNewsNavigation__item
+					label.form__checkbox--custom-1
+						input(type="checkbox")
+						span Villas
+				.tourNewsNavigation__item
+					a.tourNewsNavigation__link.tourNewsNavigation--seeAll(href="#") See All 
+		.tourNewsNavigation
+			.tourNewsNavigation__title
+				p Amenities
+			.tourNewsNavigation__list
+				.tourNewsNavigation__item
+					label.form__checkbox--custom-1
+						input(type="checkbox")
+						span Free wifi
+				.tourNewsNavigation__item
+					label.form__checkbox--custom-1
+						input(type="checkbox")
+						span Breakfast included
+				.tourNewsNavigation__item
+					label.form__checkbox--custom-1
+						input(type="checkbox")
+						span Swimming pool
+				.tourNewsNavigation__item
+					label.form__checkbox--custom-1
+						input(type="checkbox")
+						span Parking
+				.tourNewsNavigation__item
+					a.tourNewsNavigation__link.tourNewsNavigation--seeAll(href="#") See All 
+		.tourNewsNavigation.tourNewsNavigation--popular
+			.tourNewsNavigation__title
+				p Recommended for you In Ho Chi Minh city 
+			.tourNewsNavigation__list.tourNewsNavigation__list--popular
+				a.tourNewsNavigationItem(href="premade-tour.html")
+					.tourNewsNavigationItem__img
+						img.fullsize.object-cover(src="./assets/blog/1.png")
+					.tourNewsNavigationItem__content
+						//- .tourNewsItem__note
+						//- 	b #From asd asd asdasd
+						h4.tourNewsItem__title PERFECT 1BR⚡ 
+						.tourNewsItem__rating.rating__bar
+							.star
+							.star__color(data-rating="0.7")
+						.tourNewsItem__price
+							span From 
+							b $300 
+							//- span per person
+				a.tourNewsNavigationItem(href="premade-tour.html")
+					.tourNewsNavigationItem__img
+						img.fullsize.object-cover(src="./assets/blog/1.png")
+					.tourNewsNavigationItem__content
+						//- .tourNewsItem__note
+						//- 	b #From asd asd asdasd
+						h4.tourNewsItem__title W/kitchen Washing⚡ Great for BUSINESS
+						.tourNewsItem__rating.rating__bar
+							.star
+							.star__color(data-rating="0.7")
+						.tourNewsItem__price
+							span From 
+							b $300 
+							//- span per person
+				a.tourNewsNavigationItem(href="premade-tour.html")
+					.tourNewsNavigationItem__img
+						img.fullsize.object-cover(src="./assets/blog/1.png")
+					.tourNewsNavigationItem__content
+						//- .tourNewsItem__note
+						//- 	b #From asd asd asdasd
+						h4.tourNewsItem__title Ha Long Bay, Vietnam
+						.tourNewsItem__rating.rating__bar
+							.star
+							.star__color(data-rating="0.7")
+						.tourNewsItem__price
+							span From 
+							b $300 
+							//- span per person 

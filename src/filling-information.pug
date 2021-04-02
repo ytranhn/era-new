@@ -1,0 +1,14 @@
+extends components/layouts/_layout
+
+block var
+	- let title = 'Page | Billing Information';
+	- let bodyClass = 'billing-information';
+	- let breadcrumb = [{title: 'Review your plan',url: "#",active:true},{title: 'Billing Information',url: "#",active:true},{title: 'Billing Payment',url: "#",active:false}]
+
+block loading
+	include components/layouts/_loading
+block banner,breadcrumb
+block main
+	+breadcrumb(breadcrumb)
+	include components/filling-information/f-1
+block scripts

@@ -1,0 +1,15 @@
+extends components/layouts/_layout.pug
+
+block var
+	- let title = 'Help';
+	- let bodyClass = 'help';
+	- let image__SubpageBanner = "./assets/banner/banner_about.jpg";
+	- let title__SubpageBanner = "Help - Let’s talk to our expert team mates!";
+
+block loading
+	include components/layouts/_loading
+block banner,breadcrumb
+	include components/layouts/_subpage-banner
+block main
+	include components/help/h-1
+block scripts

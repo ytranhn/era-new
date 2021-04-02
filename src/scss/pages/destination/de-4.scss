@@ -1,0 +1,33 @@
+.de__list {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: map-get($color, text);
+}
+.de-4 {
+    ul {
+        padding: 0;
+        margin-top: 30px;
+        li {
+            list-style: none;
+            margin-bottom: 15px;
+            &:last-child {
+                margin: 0;
+            }
+            &::before {
+                content: '\f324';
+                font-family: 'Font Awesome 5 Pro';
+                color: map-get($color, main);
+                margin-right: 20px;
+                font-size: 18px;
+            }
+            a {
+                font-size: 2.2rem;
+                color: #707070;
+                span {
+                    font-size: 1.8rem;
+                    color: #B0B0B0;
+                }
+            }
+        }
+    }
+}

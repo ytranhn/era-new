@@ -1,0 +1,41 @@
+.nav-about {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px solid #d6d6d6;
+	// position: fixed;
+	width: 100%;
+	background: map-get($color, trang);
+	z-index: 999;
+	// ul {
+	// 	display: flex;
+	// 	align-items: center;
+	// 	padding: 30px 0 0 0;
+	// 	li {
+	// 		list-style: none;
+	// 		margin: 0 45px;
+	// 		padding-bottom: 30px;
+	// 		@media (max-width: 767.98px) {
+	// 			margin: 0 25px;
+	// 			width: max-content;
+	// 		}
+	// 		&:first-child {
+	// 			margin-left: 0;
+	// 		}
+	// 		&:last-child {
+	// 			margin-right: 0;
+	// 		}
+	// 		a {
+	// 			text-transform: uppercase;
+	// 			color: #717a85;
+	// 		}
+	// 		&.active {
+	// 			border-bottom: 5px solid map-get($color, main);
+	// 		}
+	// 	}
+	// 	@media (max-width: 575.98px) {
+	// 		overflow-x: scroll;
+	// 		padding: 20px 10px 0px 10px;
+	// 	}
+	// }
+}

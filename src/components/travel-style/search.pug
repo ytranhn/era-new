@@ -1,0 +1,28 @@
+.tourSearch__iconToggle.flex-center
+	span.fal.fa-calendar-alt
+.tourSearch
+	.tourSearch__container.desktop
+		form.tourSearch__form.d-flex.flex-wrap#tourSearch__form(action="")
+			.tourSearch__formGroup.d-flex
+				.tourSearch__keyword
+					input.input-control.fs-16(type="text" placeholder="Where are you searching for?")
+				.tourSearch__date.datePicker(date-picker='')
+					input.datePicker__input(type='text' autocomplete='off' data-date-range='')
+					label.datePicker__label
+						span.fal.fa-calendar-alt.datePicker__icon
+						span.label.datePicker__text Start
+						img.datePicker__arrow(src='./assets/icons/arrow_long.svg')
+						span.label.datePicker__text End
+					//- input.input-control(autocomplete="off" disabled data-date-range)
+					//- label.tourSearch__dateLabel.fs-16.d-flex.align-center
+					//- 	span.fal.fa-calendar-alt.tourSearch__dateLabelIcon
+					//- 	span.label.tourSearch__dateLabelText Start
+					//- 	img.svg(src="./assets/icons/arrow_long.svg")
+					//- 	span.label.tourSearch__dateLabelText End
+				.tourSearch__select
+					select.input-control.fs-16
+						option Tour Private
+						option Tour Private
+						option Tour Private
+			.tourSearch__button
+				button.btn.btn__submit--reverse Find now

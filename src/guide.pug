@@ -1,0 +1,17 @@
+extends components/layouts/_layout.pug
+
+block var
+	- let title = 'Guide';
+	- let bodyClass = 'product-page';
+	- let image__SubpageBanner = "./assets/banner/banner_transportation.jpg";
+	- let title__SubpageBanner = "Guide";
+	- let subtitle__SubpageBanner = "The tour guide who takes you to world’s you have always dreamt of visiting.";
+
+block loading
+	include components/layouts/_loading
+block banner,breadcrumb
+	include components/layouts/_subpage-banner
+	include components/guide/search
+block main
+	include components/guide/g-1
+block scripts

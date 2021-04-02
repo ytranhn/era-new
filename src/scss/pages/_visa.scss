@@ -1,0 +1,114 @@
+.visaContent {
+	.content {
+		padding-bottom: 32px;
+		border-bottom: 1px solid #d6d6d6;
+		p,
+		a {
+			color: #333333;
+			font-size: 2rem;
+			margin: 10px 0;
+			&.has-checked {
+				position: relative;
+				padding-left: 38px;
+				&:before {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 10px;
+					background-image: url(../assets/icons/checked-green.svg);
+					width: 20px;
+					height: 14px;
+					background-size: 100% 100%;
+				}
+			}
+		}
+
+		a {
+			color: map-get($color, main);
+		}
+		h3 {
+			color: #20284f;
+			font-size: 3rem;
+			font-weight: 700;
+			margin: 10px 0;
+		}
+		h4 {
+			color: #20284f;
+			font-size: 3rem;
+			font-weight: 700;
+			margin-top: 30px;
+		}
+		table {
+			border-collapse: collapse;
+			border: 1px solid #707070;
+			margin-bottom: 40px;
+			th,
+			td {
+				border: 1px solid #b0b0b0;
+				padding: 10px 20px;
+			}
+			&.center {
+				margin: 0 auto;
+			}
+		}
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 10px 0;
+			&.has-checked {
+				li {
+					position: relative;
+					padding-left: 38px;
+					&:before {
+						content: '';
+						position: absolute;
+						left: 0;
+						top: 10px;
+						background-image: url(../assets/icons/checked-green.svg);
+						width: 20px;
+						height: 14px;
+						background-size: 100% 100%;
+					}
+				}
+			}
+		}
+		li {
+			color: #333333;
+			font-size: 2rem;
+		}
+		form {
+			margin: 10px 0;
+		}
+		.form__group--type-1 {
+			position: relative;
+			max-width: 542px;
+			margin: 0 auto;
+			height: 80px;
+			@media (max-width: 767.98px) {
+				height: 40px;
+			}
+		}
+		.form__control {
+			border: 1px solid #707070;
+			border-radius: 12px;
+			padding-right: 160px;
+		}
+		.btn__submit--reverse {
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 100%;
+			padding: 0 42px;
+			box-shadow: unset;
+		}
+	}
+}
+
+.visaInfomation {
+	.form-wrapper {
+		.form-title {
+			font-size: 3.6rem;
+			margin-bottom: 13px;
+		}
+	}
+}

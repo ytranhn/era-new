@@ -1,0 +1,17 @@
+extends components/layouts/_layout.pug
+
+block var
+	- let title = 'User Registration';
+	- let bodyClass = 'user-registration-page';
+	- let image__SubpageBanner = "./assets/banner/banner_cruises.jpg";
+	- let title__SubpageBanner = "User Register";
+	- let subtitle__SubpageBanner = "Building a better way to work – together";
+
+block loading
+	include components/layouts/_loading
+block banner,breadcrumb
+	include components/layouts/_subpage-banner
+	include components/layouts/_breadcrumb
+block main
+	include components/user-registration/ur-1
+block scripts

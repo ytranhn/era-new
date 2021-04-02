@@ -1,0 +1,14 @@
+extends components/layouts/_layout
+
+block var
+	- let title = 'Page | Review your plan';
+	- let bodyClass = 'review-your-plan';
+	- let breadcrumb = [{title: 'Review your plan',url: "#",active:true},{title: 'Filling Information',url: "#",active:false},{title: 'Billing Payment',url: "#",active:false}]
+
+block loading
+	include components/layouts/_loading
+block banner,breadcrumb
+block main
+	+breadcrumb(breadcrumb)
+	include components/review/r-1
+block scripts

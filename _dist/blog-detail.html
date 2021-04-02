@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Blog Detail</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="shortcut icon" type="image/png" href="favicon.ico">
+		<link rel="stylesheet" href="./css/core.min.css">
+		<link rel="stylesheet" href="./css/main.min.css">
+	</head>
+	<body>
+		<div id="loading-container">
+			<div class="loading-wrapper">
+				<div id="loading-logo"><img src="./assets/loading.svg"></div>
+			</div>
+		</div>
+		<header class="mainHeader">
+			<div class="container-fluid">
+				<div class="mainWrapper">
+					<div class="header__top d-flex align-center">
+						<div class="header__logo"><a href="/"><img src="./assets/logo_color.svg"></a></div>
+						<div class="header__search ml-auto">
+							<div class="header__searchIcon"><span class="fal fa-search"></span></div>
+							<form class="header__searchWrapper">
+								<input id="header__search" type="text" name="Search" placeholder="Find Destination">
+								<button class="d-flex flex-center"><span class="fal fa-search"></span></button>
+							</form>
+						</div>
+						<div class="header__makeMyTrip"><a class="text-uppercase" href="make-my-trip.html">Make my trip</a><a href="help.html">Help</a></div>
+						<div class="header__language">
+							<select id="header__language">
+								<option>EN</option>
+								<option>VI</option>
+								<option>FR</option>
+							</select>
+						</div>
+						<div class="header__currency"><span>USD ($)</span></div>
+						<div class="header__cart"><a class="header__cartIcon" href="checkout.html"><span class="far fa-shopping-cart"></span><span class="header__cartText desktop">Cart</span><span class="header__cartNumber flex-center d-flex">29</span></a></div>
+						<div class="header__toggleMobile mobile d-flex align-center"><span class="fal fa-bars"></span></div>
+					</div>
+					<div class="header__bottom d-flex align-center">
+						<div class="header__nav d-flex">
+							<div class="header__navItem"><a class="header__navLink" href="/"><span class="fas fa-home-lg-alt"></span><span>HOME</span></a></div>
+							<div class="header__navItem"><a class="header__navLink" href="destination.html"><span>Destination</span></a></div>
+							<div class="header__navItem header__navItem--hasSub"><a class="header__navLink" href="travel-style.html"><span>TRAVEL STYLE</span></a><span class="fal fa-chevron-down js__toggleNavSub"></span>
+								<div class="header__navSub">
+									<div class="js__closeNavSub mobile"><span class="fal fa-chevron-down"></span><span>Back</span></div>
+									<div class="header__navItem"><a class="header__navLink" href="travel-style.html"><span>Day Trip Excursion</span></a></div>
+									<div class="header__navItem"><a class="header__navLink" href="travel-style.html"><span>Walking and Trekking</span></a></div>
+									<div class="header__navItem"><a class="header__navLink" href="travel-style.html"><span>Cultural and Theme Tours</span></a></div>
+									<div class="header__navItem"><a class="header__navLink" href="travel-style.html"><span>Tours and Sightseeing</span></a></div>
+									<div class="header__navItem"><a class="header__navLink" href="travel-style.html"><span>Free and Easy Package</span></a></div>
+								</div>
+							</div>
+							<div class="header__navItem header__navItem--hasSub"><a class="header__navLink" href="#"><span>Travel Services</span></a><span class="fal fa-chevron-down js__toggleNavSub"></span>
+								<div class="header__navSub">
+									<div class="js__closeNavSub mobile"><span class="fal fa-chevron-down"></span><span>Back</span></div>
+									<div class="header__navItem"><a class="header__navLink" href="hotel.html"><span>Hotel</span></a></div>
+									<div class="header__navItem"><a class="header__navLink" href="cruises.html"><span>Cruises</span></a></div>
+									<div class="header__navItem"><a class="header__navLink" href="transportation.html"><span>Transportation</span></a></div>
+									<div class="header__navItem"><a class="header__navLink" href="guide.html"><span>Guide</span></a></div>
+								</div>
+							</div>
+							<div class="header__navItem header__navItem--hasSub"><a class="header__navLink" href="blog.html"><span>Blog</span></a></div>
+							<div class="header__navItem"><a class="header__navLink" href="about.html"><span>About Us</span></a></div>
+						</div>
+						<div class="header__buttons d-flex align-center ml-auto"><a class="btn btn-contact" href="javascript:void(0)" data-fancybox="" data-src="#login">Đăng Nhập</a><a class="btn btn-contact" href="contact.html">Contact Us</a></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="backdrop"></div>
+		<div class="header__mobile mobile">
+			<div class="header__mobileWrapper"></div>
+		</div>
+		<section class="agent-login" style="display :none" id="login">
+			<div class="title">
+				<h2 class="main-title">Đăng nhập</h2>
+				<p>Hãy đăng nhập để tiếp tục quy trình</p>
+			</div>
+			<form>
+				<div class="form-wrapper">
+					<div class="form-group">
+						<input type="text" name="" placeholder="User name or Email Address">
+					</div>
+					<div class="form-group">
+						<input type="password" name="" placeholder="Password">
+					</div>
+					<div class="form-group"><a href="#" style="color: #f07c00">Forget Your Password?</a></div>
+					<div class="form-group">
+						<button type="submit">Đăng nhập</button>
+					</div>
+				</div>
+			</form>
+			<div class="login-social">
+				<p>Or connect with:</p>
+				<ul>
+					<li><a class="facebook d-block" href="#"><em class="fab fa-facebook-square"></em><span>Facebook</span></a></li>
+					<li><a class="google d-block" href="#"><em class="fab fa-google"></em><span>Google</span></a></li>
+				</ul>
+				<div class="follow">
+					<p>Chưa có tài khoản?</p><a href="user-registration.html">Cá nhân</a><a href="agency-registration.html">Đại lý</a>
+				</div>
+			</div>
+		</section>
+		<main>
+			<section class="SubpageBanner">
+				<div class="image overflow-hidden"><img class="object-cover lazyload blur-up" src="./assets/banner/banner_blog.jpg" alt="subpage"></div>
+				<div class="text">
+					<h1 class="title">Blog</h1>
+					<p class="sub-title">Travel to inspire your journey</p>
+				</div>
+			</section>
+			<div class="breadcrumb">
+				<div class="container-fluid">
+					<div class="mainWrapper">
+						<ol class="breadcrumb__list">
+							<li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Home</a></li>
+							<li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Blogs</a></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<div class="blogWrapper blogWrapper--detail">
+				<div class="container-fluid">
+					<div class="mainWrapper">
+						<div class="row">
+							<div class="col-lg-4 col-xl-3">
+								<div class="filterContainer">
+									<div class="filter__mobileToggle mobile"><span>Blog Categories</span><span class="fal fa-filter"></span></div>
+									<div class="filter__wrapper">
+										<div class="filter__close mobile"><span class="fal fa-times"></span></div>
+										<div class="tourNewsNavigation">
+											<div class="tourNewsNavigation__title">
+												<p>Destination</p>
+											</div>
+											<div class="tourNewsNavigation__list">
+												<div class="tourNewsNavigation__item"><a class="tourNewsNavigation__link" href="#">Vietnam</a></div>
+												<div class="tourNewsNavigation__item"><a class="tourNewsNavigation__link" href="#">Laos</a></div>
+												<div class="tourNewsNavigation__item"><a class="tourNewsNavigation__link" href="#">Cambodia</a></div>
+												<div class="tourNewsNavigation__item"><a class="tourNewsNavigation__link" href="#">Myanma</a></div>
+												<div class="tourNewsNavigation__item"><a class="tourNewsNavigation__link tourNewsNavigation--seeAll" href="#">See All </a></div>
+											</div>
+										</div>
+										<div class="tourNewsNavigation">
+											<div class="tourNewsNavigation__title">
+												<p>Categories</p>
+											</div>
+											<div class="tourNewsNavigation__list">
+												<div class="tourNewsNavigation__item"><a class="tourNewsNavigation__link" href="#">Vietnam</a></div>
+												<div class="tourNewsNavigation__item"><a class="tourNewsNavigation__link" href="#">Laos</a></div>
+												<div class="tourNewsNavigation__item"><a class="tourNewsNavigation__link" href="#">Cambodia</a></div>
+												<div class="tourNewsNavigation__item"><a class="tourNewsNavigation__link" href="#">Myanma</a></div>
+												<div class="tourNewsNavigation__item"><a class="tourNewsNavigation__link tourNewsNavigation--seeAll" href="#">See All </a></div>
+											</div>
+										</div>
+										<div class="tourNewsNavigation tourNewsNavigation--popular">
+											<div class="tourNewsNavigation__title">
+												<p>Popular Blogs</p>
+											</div>
+											<div class="tourNewsNavigation__list tourNewsNavigation__list--popular"><a class="tourNewsNavigationItem" href="blog-detail.html">
+													<div class="tourNewsNavigationItem__img"><img class="fullsize object-cover" src="./assets/blog/1.png"></div>
+													<div class="tourNewsNavigationItem__content">
+														<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+														<div class="tourNewsItem__review">
+															<div class="tourNewsItem__reviewContent">
+																<p>By Xu Kien - July 26, 2020</p>
+															</div>
+														</div>
+													</div></a><a class="tourNewsNavigationItem" href="blog-detail.html">
+													<div class="tourNewsNavigationItem__img"><img class="fullsize object-cover" src="./assets/blog/1.png"></div>
+													<div class="tourNewsNavigationItem__content">
+														<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+														<div class="tourNewsItem__review">
+															<div class="tourNewsItem__reviewContent">
+																<p>By Xu Kien - July 26, 2020</p>
+															</div>
+														</div>
+													</div></a><a class="tourNewsNavigationItem" href="blog-detail.html">
+													<div class="tourNewsNavigationItem__img"><img class="fullsize object-cover" src="./assets/blog/1.png"></div>
+													<div class="tourNewsNavigationItem__content">
+														<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+														<div class="tourNewsItem__review">
+															<div class="tourNewsItem__reviewContent">
+																<p>By Xu Kien - July 26, 2020</p>
+															</div>
+														</div>
+													</div></a></div>
+										</div>
+									</div>
+								</div>
+								<div class="tourNewsNavigation tourNewsNavigation--popular">
+									<div class="tourNewsNavigation__title">
+										<p>Popular Blogs</p>
+									</div>
+									<div class="tourNewsNavigation__list tourNewsNavigation__list--popular"><a class="tourNewsNavigationItem" href="blog-detail.html">
+											<div class="tourNewsNavigationItem__img"><img class="fullsize object-cover" src="./assets/blog/1.png"></div>
+											<div class="tourNewsNavigationItem__content">
+												<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+												<div class="tourNewsItem__review">
+													<div class="tourNewsItem__reviewContent">
+														<p>By Xu Kien - July 26, 2020</p>
+													</div>
+												</div>
+											</div></a><a class="tourNewsNavigationItem" href="blog-detail.html">
+											<div class="tourNewsNavigationItem__img"><img class="fullsize object-cover" src="./assets/blog/1.png"></div>
+											<div class="tourNewsNavigationItem__content">
+												<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+												<div class="tourNewsItem__review">
+													<div class="tourNewsItem__reviewContent">
+														<p>By Xu Kien - July 26, 2020</p>
+													</div>
+												</div>
+											</div></a><a class="tourNewsNavigationItem" href="blog-detail.html">
+											<div class="tourNewsNavigationItem__img"><img class="fullsize object-cover" src="./assets/blog/1.png"></div>
+											<div class="tourNewsNavigationItem__content">
+												<h4 class="tourNewsItem__title">Ha Long Bay, Vietnam</h4>
+												<div class="tourNewsItem__review">
+													<div class="tourNewsItem__reviewContent">
+														<p>By Xu Kien - July 26, 2020</p>
+													</div>
+												</div>
+											</div></a></div>
+								</div>
+							</div>
+							<div class="col-lg-8 col-xl-9 pb-80">
+								<div class="blogDetail">
+									<h1 class="blogDetail__title">Climbing Vietnam’s fourth highest mountain peak, Bach Moc Luong Tu</h1>
+									<div class="tourNewsItem__review">
+										<div class="tourNewsItem__reviewContent">
+											<p>By Xu Kien - July 26, 2020</p>
+										</div>
+									</div>
+									<div class="tourNewsItem__socials"><a href="#"><img src="./assets/icons/news_facebook.svg"></a><a href="#"><img src="./assets/icons/news_twitter.svg"></a><a href="#"><img src="./assets/icons/news_other.svg"></a></div>
+									<div class="blogDetail__content clearfix">
+										<p> <b>Viet Nam’s diverse markets stretch from Ha Noi to Ho Chi Minh City to offer a very unique shopping experience. A walk around the Vietnamese markets gives a perfect opportunity to see some exotic, wondrous and crazy delights.Here are a few of the top things to buy in Viet Nam</b></p>
+										<p>Finally, after a difficult trek and heaps of effort I reached the top of Bach Moc Luong Tu, gripping the peak with my bare hands. For the first time in my life, I was drained of energy from a mountain climb but also faced with a sublime panoramic view of the Vietnamese border.</p>
+										<p>Bach Moc Luong Tu, 3,046 m high, is Vietnam’s fourth highest mountain peak, after Fansipan, Putaleng and Pusilung, all in northern Vietnam. The mountain, locally called Ky Quan San after the ethnic village at its base, lies between the northwestern provinces of Lai Chau and Lao Cai.</p>
+										<p>There are two ways to conquer Bach Moc Luong Tu. The first route departs from Sang Ma Sao Ward of Bat Xat District in Lao Cai Province whilst the second starts at Sin Sui Ho Ward of Phong Tho District in Lai Chau Province.</p>
+										<p>The former is recommended and preferred since the route via Lai Chau Province passes by Chinese territory and requires a special border pass. When visiting Bach Moc Luong Tu, most hikers opt for the first trail from Sang Ma Sao Ward to avoid the additional paperwork.</p>
+										<p>Our sherpa during the hike was A Tru, a H’mong local from Sang Ma Sao Village. A Tru has over seven years of experience and knowledge in guiding travelers to northern mountains like Bach Moc Luong Tu, Nhiu Co San, Cu Nhu San, Pa Vi, Lao Than, Ta Lien Son, Putaleng, and Ngu Chi Son. Therefore, he knew his way around Bach Moc Luong Tu like the back of his hand.</p>
+										<p>That morning I woke up early in Y Ty Commune then walked to Sang Ma Sao Village in Muong Hum Commune. The route was fairly easy. At 8 a.m., I arrived at A Tru’s house and waited for the rest of my crew to arrive.</p><img src="./assets/blog/1.png" alt="">
+										<p>Bach Moc Luong Tu, 3,046 m high, is Vietnam’s fourth highest mountain peak, after Fansipan, Putaleng and Pusilung, all in northern Vietnam. The mountain, locally called Ky Quan San after the ethnic village at its base, lies between the northwestern provinces of Lai Chau and Lao Cai.</p>
+										<p>There are two ways to conquer Bach Moc Luong Tu. The first route departs from Sang Ma Sao Ward of Bat Xat District in Lao Cai Province whilst the second starts at Sin Sui Ho Ward of Phong Tho District in Lai Chau Province.</p>
+										<p>The former is recommended and preferred since the route via Lai Chau Province passes by Chinese territory and requires a special border pass. When visiting Bach Moc Luong Tu, most hikers opt for the first trail from Sang Ma Sao Ward to avoid the additional paperwork.</p>
+										<p>Our sherpa during the hike was A Tru, a H’mong local from Sang Ma Sao Village. A Tru has over seven years of experience and knowledge in guiding travelers to northern mountains like Bach Moc Luong Tu, Nhiu Co San, Cu Nhu San, Pa Vi, Lao Than, Ta Lien Son, Putaleng, and Ngu Chi Son. Therefore, he knew his way around Bach Moc Luong Tu like the back of his hand.</p>
+										<p>That morning I woke up early in Y Ty Commune then walked to Sang Ma Sao Village in Muong Hum Commune. The route was fairly easy. At 8 a.m., I arrived at A Tru’s house and waited for the rest of my crew to arrive.</p><img src="./assets/blog/1.png" alt="">
+										<p>Bach Moc Luong Tu, 3,046 m high, is Vietnam’s fourth highest mountain peak, after Fansipan, Putaleng and Pusilung, all in northern Vietnam. The mountain, locally called Ky Quan San after the ethnic village at its base, lies between the northwestern provinces of Lai Chau and Lao Cai.</p>
+										<p>There are two ways to conquer Bach Moc Luong Tu. The first route departs from Sang Ma Sao Ward of Bat Xat District in Lao Cai Province whilst the second starts at Sin Sui Ho Ward of Phong Tho District in Lai Chau Province.</p>
+										<p>The former is recommended and preferred since the route via Lai Chau Province passes by Chinese territory and requires a special border pass. When visiting Bach Moc Luong Tu, most hikers opt for the first trail from Sang Ma Sao Ward to avoid the additional paperwork.</p>
+										<p>Our sherpa during the hike was A Tru, a H’mong local from Sang Ma Sao Village. A Tru has over seven years of experience and knowledge in guiding travelers to northern mountains like Bach Moc Luong Tu, Nhiu Co San, Cu Nhu San, Pa Vi, Lao Than, Ta Lien Son, Putaleng, and Ngu Chi Son. Therefore, he knew his way around Bach Moc Luong Tu like the back of his hand.</p>
+										<p>That morning I woke up early in Y Ty Commune then walked to Sang Ma Sao Village in Muong Hum Commune. The route was fairly easy. At 8 a.m., I arrived at A Tru’s house and waited for the rest of my crew to arrive.</p><img src="./assets/blog/1.png" alt="">
+										<p>Bach Moc Luong Tu, 3,046 m high, is Vietnam’s fourth highest mountain peak, after Fansipan, Putaleng and Pusilung, all in northern Vietnam. The mountain, locally called Ky Quan San after the ethnic village at its base, lies between the northwestern provinces of Lai Chau and Lao Cai.</p>
+										<p>There are two ways to conquer Bach Moc Luong Tu. The first route departs from Sang Ma Sao Ward of Bat Xat District in Lao Cai Province whilst the second starts at Sin Sui Ho Ward of Phong Tho District in Lai Chau Province.</p>
+										<p>The former is recommended and preferred since the route via Lai Chau Province passes by Chinese territory and requires a special border pass. When visiting Bach Moc Luong Tu, most hikers opt for the first trail from Sang Ma Sao Ward to avoid the additional paperwork.</p>
+										<p>Our sherpa during the hike was A Tru, a H’mong local from Sang Ma Sao Village. A Tru has over seven years of experience and knowledge in guiding travelers to northern mountains like Bach Moc Luong Tu, Nhiu Co San, Cu Nhu San, Pa Vi, Lao Than, Ta Lien Son, Putaleng, and Ngu Chi Son. Therefore, he knew his way around Bach Moc Luong Tu like the back of his hand.</p>
+										<p>That morning I woke up early in Y Ty Commune then walked to Sang Ma Sao Village in Muong Hum Commune. The route was fairly easy. At 8 a.m., I arrived at A Tru’s house and waited for the rest of my crew to arrive.</p>
+									</div>
+								</div>
+								<div class="table__tip">
+									<div class="tip__title">
+										<p>Tips for you</p>
+										<h3>Before traveling</h3>
+									</div>
+									<div class="table">
+										<table>
+											<tr>
+												<th>Transportation</th>
+												<td>If departing from Sa Pa Town or Y Ty Commune, you can either rent a motorbike or hop on a coach to reach the Muong Hum intersection. The road is wide enough for a six-seater car. However, a rental motorbike is recommended since the path is beautiful and you might want to stop along the way for some pictures.</td>
+											</tr>
+											<tr>
+												<th>When to go</th>
+												<td>The most optimal period for your Bach Moc Luong Tu conquest is from August to May. The rainy season lasts from June to July during which the trails are slippery and dangerous. July is to be especially avoided since the winds are extremely strong and violent.</td>
+											</tr>
+											<tr>
+												<th>Guide/porter</th>
+												<td>There are two reasons why you need to hire a porter for your hike. Firstly, the trails can get deadly dangerous. Secondly, some have reportedly climbed the mountain alone only to mysteriously disappear without ever being found. Also, porters are skilled experts and can prevent disorientation during the route. A Tru is our recommendation since he was very friendly and enthusiastic during our trip. His contact number is 0914 402 295.</td>
+											</tr>
+											<tr>
+												<th>Accommodation</th>
+												<td>At an altitude of 2,100 m, there are many H’mong huts where one can spend the night. These huts are fully equipped with bedding and sleeping bags. An additional cost of VND50,000 ($2) is charged for a shower and a medicinal foot soak costs VND20,000 ($0.9).</td>
+											</tr>
+											<tr>
+												<th>Food</th>
+												<td>All of our meals were made with local ingredients from the village including livestock like chicken and pork, forest vegetables, corn wine, and rice wine. For breakfast we had rice porridge, fried rice, and rice balls with sesame salt.</td>
+											</tr>
+											<tr>
+												<th>Duration</th>
+												<td>For those who are less active with less stamina, a three-day and two-night trip is recommended. More active and stronger hikers can opt for a two-day and one-night trip.</td>
+											</tr>
+											<tr>
+												<th>Cost</th>
+												<td>The cost is VND1.4 million ($60) for the trip if you depart from Sa Pa. If you choose to be picked up by a porter from Muong Hum, the cost is less at VND900,000 ($39).</td>
+											</tr>
+											<tr>
+												<th>Hiking gear</th>
+												<td> You will need trekking poles, hiking shoes, hiking gloves, a wide-brim hat, flashlight, and medicine.</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="blog-detail-page" id="js-page-verify" hidden></div>
+		</main>
+		<footer>
+			<div class="container-fluid">
+				<div class="mainWrapper pt-80">
+					<div class="row">
+						<div class="col-md-6 col-xl-3 fs-16">
+							<h4 class="text-uppercase">ERA CO.,LTD</h4>
+							<p>Address: 34 Lo 7, Den Lu 1, Hoang Mai Dist, Hanoi, Vietnam</p>
+							<p>Email: info@eratour.vn</p>
+							<p>Phone: (+84-24) 3622 7195 / 3622 7752</p>
+							<p>Hotline: +84 90 341 1916</p><br>
+							<h4 class="text-uppercase">ERIC MICHELI</h4>
+							<p>Phone: +33 06 11 64 77 25</p>
+							<p>Email: eric@explorerealasia.com</p>
+							<ul class="footer__socials d-flex align-center">
+								<li><a href="#"><em class="fab fa-facebook-f"></em></a></li>
+								<li><a href="#"><em class="fab fa-twitter"></em></a></li>
+								<li><a href="#"><em class="fab fa-youtube"></em></a></li>
+								<li><a href="#"><em class="fab fa-instagram"></em></a></li>
+								<li><a href="#"><em class="fab fa-tripadvisor"></em></a></li>
+							</ul>
+						</div>
+						<div class="col-md-6 col-xl-3 fs-16">
+							<h4 class="text-uppercase">OUR INDUSTRY AFFILIATIONS AND PARTNERSHIPS</h4>
+							<p>And we are really proud of them</p><br>
+							<div class="footer__list"><a class="d-flex align-center" href="#">SHIFA TRAVELS <span class="fal fa-external-link-alt"></span></a><a class="d-flex align-center" href="#">VNHOLIDAYS.COM <span class="fal fa-external-link-alt"></span></a><a class="d-flex align-center" href="#">COUNTRY TRAVEL DISCOVERIES <span class="fal fa-external-link-alt"></span></a><a class="d-flex align-center" href="#">VIETNAM TIMELESS CHARM <span class="fal fa-external-link-alt"></span></a></div>
+						</div>
+						<div class="col-md-6 col-xl-3 fs-16">
+							<h4 class="text-uppercase">Stay in the loop</h4>
+							<p>The latest travel tips and insider insights delivered straight to your inbox.</p>
+							<form class="footer__form">
+								<div class="form-group">
+									<input class="form-control" type="text" placeholder="First name">
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="text" placeholder="Last name">
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="text" placeholder="Email">
+								</div>
+								<div class="form-button">
+									<button class="btn btn__submit">Subscribe</button>
+								</div>
+							</form>
+						</div>
+						<div class="col-md-6 col-xl-3"><img src="./assets/footer_rate.jpg"></div>
+					</div>
+					<div class="copy-right">
+						<div class="payment"><img src="./assets/payment.png" alt=""></div>
+						<div class="list-link">
+							<div class="text__item"><a href="#">© 2020 ERA. All rights reserved</a></div>
+							<div class="text__item"><a href="#">Privacy</a></div>
+							<div class="text__item"><a href="#">Terms</a></div>
+							<div class="text__item"><a href="#">Sitemap</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="./js/core.min.js"></script>
+		<script type="text/javascript" src="./js/main.min.js"></script>
+	</body>
+</html>

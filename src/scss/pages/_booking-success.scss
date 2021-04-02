@@ -1,0 +1,263 @@
+.BookingSuccess {
+	padding: 87px 0 108px;
+	.block-title {
+		text-align: center;
+		margin: 0 auto;
+		p {
+			color: #707070;
+			font-size: 3rem;
+			font-weight: 700;
+			margin-bottom: 23px;
+		}
+		h2 {
+			color: map-get($color, text);
+			font-size: 4.8rem;
+			font-weight: 400;
+		}
+		h4 {
+			color: #707070;
+			font-size: 2.4rem;
+			span {
+				color: map-get($color, text);
+				margin-left: 14px;
+			}
+		}
+		@media (max-width: 1024.98px) {
+			p {
+				font-size: 2.4rem;
+			}
+			h2 {
+				font-size: 3.8rem;
+			}
+			h4 {
+				font-size: 2rem;
+			}
+		}
+	}
+	.title-page {
+		text-align: center;
+		color: map-get($color, main);
+		font-size: 2.4rem;
+		text-transform: uppercase;
+		text-decoration: underline;
+	}
+	@media (max-width: 1024.98px) {
+		padding: 50px 0;
+		.block-title {
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+	@media (max-width: 767.98px) {
+		padding: 24px 0;
+		.block-title {
+			h2 {
+				font-size: 2.8rem;
+			}
+		}
+	}
+}
+
+.list-step-booking-wrapper {
+	margin-top: 64px;
+	@media (max-width: 1024.98px) {
+		margin-top: 34px;
+	}
+}
+
+.list-step-booking {
+	margin-top: 114px;
+	.step__item {
+		&.active {
+			svg {
+				g {
+					stroke: map-get($color, main);
+					g {
+						path {
+							stroke: map-get($color, main);
+						}
+					}
+				}
+			}
+		}
+		&:nth-child(2) {
+			.img {
+				&:after {
+					background-image: url(../assets/icons/arrow-next-step-2.svg);
+					height: 44px;
+					width: 268px;
+					right: -40%;
+					@media (max-width: 1439.98px) {
+						right: -50%;
+					}
+				}
+			}
+		}
+		&:last-child {
+			.img {
+				&:after {
+					content: none;
+				}
+			}
+		}
+		@media (max-width: 767.98px) {
+			+ .step__item {
+				margin-top: 24px;
+			}
+		}
+	}
+	.img {
+		position: relative;
+		img,
+		svg {
+			display: block;
+			margin: 0 auto;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			background-image: url(../assets/icons/arrow-next-step.svg);
+			background-size: 100% 100%;
+			top: 50%;
+			transform: translateY(-50%);
+			right: -30%;
+			width: 255px;
+			height: 32px;
+			@media (max-width: 1439.98px) {
+				right: -40%;
+			}
+		}
+		@media (max-width: 1024.98px) {
+			&:after {
+				content: none;
+			}
+		}
+	}
+	.text {
+		margin-top: 30px;
+		p {
+			text-align: center;
+			+ p {
+				margin-top: 5px;
+			}
+		}
+		@media (max-width: 1024.98px) {
+			margin-top: 12px;
+		}
+	}
+	@media (max-width: 1024.98px) {
+		margin-top: 54px;
+	}
+}
+
+.block-success-note-wrapper {
+	margin: 96px 0;
+	border: 1px solid #707070;
+	border-radius: 24px;
+	.heading-block {
+		padding: 40px;
+		border-bottom: 1px solid #707070;
+		@media (max-width: 1024.98px) {
+			padding: 24px;
+		}
+	}
+	.body-block {
+		padding: 40px;
+		p {
+			font-size: 2.4rem;
+			color: #333333;
+			@media (max-width: 767.98px) {
+				font-size: 1.6rem;
+			}
+		}
+		ul {
+			margin: 33px 0;
+			list-style-type: none;
+			padding: 0;
+			text-align: center;
+			@media (max-width: 767.98px) {
+				margin: 24px 0;
+			}
+		}
+		li {
+			+ li {
+				margin-top: 5px;
+			}
+			p {
+				font-weight: 700;
+			}
+		}
+		@media (max-width: 1024.98px) {
+			padding: 24px;
+		}
+	}
+	@media (max-width: 1024.98px) {
+		margin: 50px 0;
+	}
+}
+
+.BookingSuccessNews {
+	border-top: 1px solid #d6d6d6;
+	padding: 48px 0;
+	.block-title {
+		text-align: center;
+		margin: 0 auto;
+		p {
+			color: #707070;
+			font-size: 2.4rem;
+			font-weight: 700;
+		}
+		h2 {
+			color: map-get($color, text);
+			font-size: 3.6rem;
+			font-weight: 400;
+		}
+	}
+	.question__item {
+		padding: 34px;
+		border-radius: 24px;
+		height: 100%;
+		box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+		h3 {
+			color: map-get($color, text);
+			font-size: 3rem;
+			margin-bottom: 28px;
+		}
+		p {
+			color: #333333;
+			font-size: 2rem;
+		}
+		@media (max-width: 767.98px) {
+			padding: 15px;
+			h3 {
+				font-size: 1.8rem;
+				margin-bottom: 14px;
+			}
+			p {
+				font-size: 1.6rem;
+			}
+		}
+	}
+	@media (max-width: 1024.98px) {
+		[class*='col-'] {
+			margin-bottom: 25px;
+		}
+	}
+	@media (max-width: 767.98px) {
+		padding: 24px 0;
+		.block-title {
+			h2 {
+				font-size: 2.8rem;
+			}
+		}
+	}
+}
+
+.see-more-questions {
+	text-align: center;
+	margin-top: 90px;
+	@media (max-width: 767.98px) {
+		margin-top: 34px;
+	}
+}

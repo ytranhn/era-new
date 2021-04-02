@@ -1,0 +1,76 @@
+// .agent-hub {
+// 	p.sub {
+// 		font-size: 2.4rem;
+// 		margin-bottom: 20px;
+// 		@media (max-width: 575.98px) {
+// 			font-size: 1.4rem;
+// 		}
+// 	}
+// 	.form-checked {
+// 		justify-content: initial;
+// 		.form-group {
+// 			&:last-child {
+// 				margin-left: 85px;
+// 			}
+// 		}
+// 		@media (max-width: 575.98px) {
+// 			justify-content: space-between;
+// 			.form-group {
+// 				&:last-child {
+// 					margin: 0;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.form-group {
+// 		.button {
+// 			text-align: center;
+// 			button {
+// 				max-width: 260px;
+// 			}
+// 		}
+// 	}
+// }
+.agency-registration {
+	.form__group--type-2 {
+		margin-bottom: 20px;
+		.input__group {
+			box-shadow: 0 3px 6px rgba(map-get($color, den), 0.15);
+		}
+		.form__checkbox--custom-1 > span {
+			font-size: 2rem;
+		}
+	}
+	.section__titleWrapper {
+		max-width: 940px;
+		margin: 0 auto;
+		text-align: center;
+		p {
+			font-size: 1.6rem;
+			color: #333;
+			padding-bottom: 80px;
+			@media (max-width: 575.98px) {
+				padding-bottom: 20px;
+			}
+		}
+	}
+	.form__group--button {
+		.btn__submit--reverse {
+			height: 70px;
+			font-size: 2rem;
+			text-transform: uppercase;
+			@media (max-width: 1199.98px) {
+				height: 60px;
+			}
+			@media (max-width: 767.98px) {
+				height: 50px;
+			}
+		}
+	}
+	.form__subscribe {
+		margin-top: 10px;
+		.form__checkbox--custom-1 + .form__checkbox--custom-1 {
+			margin-left: 80px;
+		}
+	}
+}

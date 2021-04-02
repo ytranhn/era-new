@@ -1,0 +1,27 @@
+.ab-7 {
+	.slide-image {
+		position: relative;
+		padding: 0 30px;
+		@media (min-width: 1025px) {
+			.index__swiper__pagination {
+				display: none;
+			}
+		}
+		@media (max-width: 1024.98px) {
+			margin: 0 -10px;
+			padding: 0;
+		}
+	}
+	@media (max-width: 767.98px) {
+		.mainWrapper {
+			padding-bottom: 30px;
+		}
+	}
+	.slide-image {
+		@media (max-width: 575.98px) {
+			.image {
+				text-align: center;
+			}
+		}
+	}
+}

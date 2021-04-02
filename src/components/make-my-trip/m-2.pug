@@ -1,0 +1,19 @@
+.makeMyTrip.pt-80
+	.container-fluid
+		.mainWrapper
+			.row
+				.col-lg-8.makeMyTripOptions
+					.makeMyTripOptions__note
+						p Make My TripTM is a custom tour service provided by ERA (Explore Real Asia).  Please follow step by step below to create your ideal tour just for you. Please note that our price estimation & tour checklist are for reference only. Our agent will contact and help you with tour designs.
+					include m-2-basic-information
+					include m-2-destination
+					include m-2-hotels
+					include m-2-premade-tours
+					include m-2-cruises
+					include m-2-transportation
+					include m-2-tour-guide
+				.col-lg-4.cartAside__col
+					.cartAside__width
+					.cartAside__colWrapper
+						include ../layouts/_cart-aside
+						block help

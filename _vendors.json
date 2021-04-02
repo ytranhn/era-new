@@ -1,0 +1,17 @@
+{
+	"fonts": ["src/fonts/**.{woff,woff2}"],
+	"js": [
+		"node_modules/lazysizes/lazysizes.js",
+		"node_modules/swiper/swiper-bundle.js",
+		"node_modules/litepicker/dist/js/main.nocss.js",
+		"node_modules/jquery/dist/jquery.min.js",
+		"node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js",
+		"node_modules/nouislider/distribute/nouislider.min.js"
+	],
+	"css": [
+		"node_modules/swiper/swiper-bundle.css",
+		"node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css",
+		"node_modules/litepicker/dist/css/style.css",
+		"node_modules/nouislider/distribute/nouislider.min.css"
+	]
+}

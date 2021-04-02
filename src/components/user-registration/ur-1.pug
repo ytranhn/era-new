@@ -1,0 +1,45 @@
+section.agency-registration.pd-80
+	.container-fluid
+		.mainWrapper
+			.section__titleWrapper
+				h2.main-title.text-uppercase ĐĂNG KÝ TÀI KHOẢN
+				p.homeDescription Đội ngũ Era giàu kinh nghiệm của chúng tôi cam kết mang lại sự xuất sắc trong dịch vụ khách hàng
+			form
+				.row
+					.col-lg-4.col-sm-6
+						label.form__group--type-2
+							span Username
+							.input__group
+								input(type="text")
+					.col-lg-4.col-sm-6
+						label.form__group--type-2
+							span Email
+							.input__group
+								input(type="text")
+					.col-lg-4.col-sm-6
+						label.form__group--type-2
+							span Your birthday *
+							.input__group
+								input(data-date type="text")
+					.col-lg-4.col-sm-6
+						label.form__group--type-2
+							span Password
+							.input__group
+								input(type="password")
+					.col-lg-4.col-sm-6
+						label.form__group--type-2
+							span Re-Password
+							.input__group
+								input(type="password")
+					.col-lg-12
+						.form__group.form__group--button.text-center
+							button.btn.btn__submit--reverse(type="submit" data-fancybox data-src="#congratulation") Submit
+.d-none
+	section.popup-2#congratulation
+		.icon-checked
+			img(src="./assets/icons/1.png", alt="")
+		h2.main-title Congratulation!
+		h3 You have successfully 
+			span Registration!
+		p Your account has been created.
+		a.btn.btn__submit--reverse(href="/") Back to home

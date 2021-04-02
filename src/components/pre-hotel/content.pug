@@ -1,0 +1,202 @@
+.tourDetail__information.tourDetail__section.tourDetail__information--list(data-id="tabSection-2")
+	.tourDetail__informationTitleBlock
+		h2.tourDetail__title Facilities
+	.tourDetail__content
+		.row
+			.col-sm-6
+				ul.tourDetail__list
+					li Free WiFi
+					li Airport shuttle
+					li Family rooms
+			.col-sm-6
+				ul.tourDetail__list
+					li Non-smoking rooms
+					li 24-hour front desk
+					li Terrace
+.tourDetail__information.tourDetail__section(data-id="tabSection-3")
+	.tourDetail__informationTitleBlock
+		h2.tourDetail__title Room Types
+		p When would you like to stay at Christina’s - Hotel & Café?
+	.tourDetail__content
+		table.table-room-type
+			thead
+				tr
+					th.text-center Sleeps
+					th Room Types
+			tbody
+				-for(i=0;i<4;i++)
+					tr
+						td.text-center(rowspan="2")
+							// HÌNH CÓ CỘNG
+							img(src="./assets/tour-detail/icon-01.png", alt="")
+							// HÌNH KHÔNG CÓ CỘNG
+							// img(src="./assets/tour-detail/icon-02.png", alt="")
+						td
+							.group-content.row
+								.content__item.col-xl-6
+									h4 Superior Double
+									p 1 Double Bed
+								.content__item.col-xl-6.text-right
+									span đ
+										del 600,000
+									h3 đ 453,000
+									span per night
+								.formTourSearchItem__action
+									span.fas.fa-ellipsis-h
+					tr
+						td
+							.group-content.row
+								.content__item.col-xl-6
+									ul.tourDetail__list
+										li Free Breakfast
+										li Free WiFi
+								.content__item.col-xl-6
+									ul.tourDetail__list.style-2
+										li Free Breakfast
+										li Free WiFi
+							.note
+								ul.tourDetail__list.style-3
+									li Easy cancellation
+									li We allow great flexibility when you have to cancel your trip and charge a minimal fee.
+.tourDetail__information.tourDetail__section.tourDetail__information--list(data-id="tabSection-4")
+	.tourDetail__informationTitleBlock
+		h2.tourDetail__title Area Info
+		p 212/ 2B Nguyen Trai District 1, District 1, Ho Chi Minh City
+		span.fs-16.fw-700
+			a(href="#") See map
+	.tourDetail__content
+		.group-content.row
+			.content__item.col-3xl-6
+				h5 What’s nearby
+					span *
+				ul.tourDetail__list.style-4
+					li
+						p Thai Binh Market
+						p.ml-auto 0.3 km
+					li
+						p Nowzone Fashion Mall
+						p.ml-auto 0.3 km
+					li
+						p University of Science Ho Chi Minh City
+						p.ml-auto 0.3 km
+					li
+						p 23/9 Park
+						p.ml-auto 0.3 km
+					li
+						p Zen Plaza
+						p.ml-auto 0.3 km
+					li
+						p Cho Quan Church
+						p.ml-auto 0.3 km
+					li
+						p Tao Dan Park
+						p.ml-auto 0.3 km
+					li
+						p Mariamman Hindu Temple
+						p.ml-auto 0.3 km
+			.content__item.col-3xl-6
+				h5 Closest airports
+					span *
+				ul.tourDetail__list.style-4
+					li
+						p Tan Son Nhat International Airport
+						p.ml-auto 0.3 km
+			.content__item.col-3xl-6
+				h5 Restaurants and markets
+					span *
+				ul.tourDetail__list.style-4
+					li
+						p Phở Hùng
+						p.ml-auto 0.3 km
+					li
+						p Thai Binh market
+						p.ml-auto 0.3 km
+					li
+						p Coop Mart
+						p.ml-auto 0.3 km
+			.content__item.col-3xl-6
+				h5 What’s nearby
+					span *
+				ul.tourDetail__list.style-4
+					li
+						p Thai Binh Market
+						p.ml-auto 0.3 km
+					li
+						p Nowzone Fashion Mall
+						p.ml-auto 0.3 km
+					li
+						p University of Science Ho Chi Minh City
+						p.ml-auto 0.3 km
+					li
+						p 23/9 Park
+						p.ml-auto 0.3 km
+					li
+						p Zen Plaza
+						p.ml-auto 0.3 km
+					li
+						p Cho Quan Church
+						p.ml-auto 0.3 km
+					li
+						p Tao Dan Park
+						p.ml-auto 0.3 km
+					li
+						p Mariamman Hindu Temple
+						p.ml-auto 0.3 km
+		.note
+			span * 
+			| All distances are measured in straight lines. Actual travel distances may vary.
+.tourDetail__information.tourDetail__section.tourDetail__information--alsoLike
+	.tourDetail__informationTitleBlock
+		h2.tourDetail__title You may also like
+		.tourDetail__contentToggle
+			span.fs-16.fw-700 See more
+	.tourDetail__content
+		.row
+			.col-sm-6.col-2xl-4
+				a.tourNewsItem(href="/pre-hotel.html")
+					.tourNewsItem__img.overflow-hidden
+						img.fullsize.object-cover(src="./assets/destinations/5.jpg")
+					.tourNewsItem__content
+						.tourNewsItem__note
+							span #Hotels
+						h4.tourNewsItem__title Ha Long Bay, Vietnam
+						.tourNewsItem__rating.rating__bar
+							.star
+							.star__color(data-rating="0.7")
+						.tourNewsItem__bottom
+							.tourNewsItem__price
+								span From 
+								b $500
+							span.btn.btn__submit See more
+			.col-sm-6.col-2xl-4
+				a.tourNewsItem(href="/pre-hotel.html")
+					.tourNewsItem__img.overflow-hidden
+						img.fullsize.object-cover(src="./assets/destinations/5.jpg")
+					.tourNewsItem__content
+						.tourNewsItem__note
+							span #Hotels
+						h4.tourNewsItem__title Ha Long Bay, Vietnam
+						.tourNewsItem__rating.rating__bar
+							.star
+							.star__color(data-rating="0.7")
+						.tourNewsItem__bottom
+							.tourNewsItem__price
+								span From 
+								b $500
+							span.btn.btn__submit See more
+			.col-sm-6.col-2xl-4
+				a.tourNewsItem(href="/pre-hotel.html")
+					.tourNewsItem__img.overflow-hidden
+						img.fullsize.object-cover(src="./assets/destinations/5.jpg")
+					.tourNewsItem__content
+						.tourNewsItem__note
+							span #Hotels
+						h4.tourNewsItem__title Ha Long Bay, Vietnam
+						.tourNewsItem__rating.rating__bar
+							.star
+							.star__color(data-rating="0.7")
+						.tourNewsItem__bottom
+							.tourNewsItem__price
+								span From 
+								b $500
+							span.btn.btn__submit See more

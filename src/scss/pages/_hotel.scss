@@ -1,0 +1,153 @@
+.hotel {
+	.product-item {
+		margin-bottom: 35px;
+	}
+}
+.hotel__list {
+	.tourNewsItem__img {
+		@include imgscale(275/410);
+	}
+}
+.information {
+	font-size: 2.6rem;
+	font-weight: 700;
+	color: map-get($color, main);
+	margin-bottom: 30px;
+	span {
+		color: map-get($color, text);
+		margin-left: 5px;
+	}
+}
+.item__loading {
+	text-align: center;
+	width: 100%;
+	a {
+		font-size: 1.8rem;
+		font-weight: 700;
+		color: map-get($color, main);
+		text-transform: uppercase;
+		text-decoration: underline;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		em {
+			font-size: 1.8rem;
+			margin-left: 10px;
+		}
+	}
+}
+.category__title {
+	font-size: 2.6rem;
+	color: map-get($color, text);
+	font-weight: 700;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #d6d6d6;
+}
+.category__item,
+.category__rating {
+	input {
+		display: none;
+	}
+	label {
+		font-size: 1.8rem;
+		color: #333;
+		font-weight: 700;
+		display: flex;
+		align-items: center;
+		&::before {
+			content: '\f0c8';
+			font-family: 'Font Awesome 5 Pro';
+			font-size: 24px;
+			margin-right: 10px;
+			color: none;
+		}
+	}
+	input:checked ~ label {
+		&::before {
+			content: '\f14a';
+			color: map-get($color, main);
+		}
+	}
+}
+.category__item {
+	.form-group {
+		margin-top: 25px;
+		padding: 0;
+	}
+}
+.category__button {
+	font-size: 1.8rem;
+	color: map-get($color, main);
+	font-weight: 700;
+	text-decoration: underline;
+	margin-top: 25px;
+}
+.category {
+	margin-top: 60px;
+	&:first-child {
+		margin-top: 0;
+	}
+}
+.item__child {
+	margin-top: 25px;
+	figure {
+		display: flex;
+		align-items: center;
+	}
+	figcaption {
+		margin-left: 15px;
+	}
+	.item__hashtab {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 1;
+	}
+	.item__price {
+		p {
+			span {
+				// margin-right: 5px;
+			}
+		}
+	}
+}
+.category__rating {
+	display: flex;
+	align-items: center;
+	margin-top: 25px;
+}
+.booking {
+	.product-item {
+		border: 3px solid rgba(#000, 0);
+		@media (max-width: 1199.98px) {
+			&:first-child {
+				margin-top: 30px;
+			}
+		}
+		@media (min-width: 1024.98px) {
+			&:hover {
+				border-color: map-get($color, main);
+			}
+		}
+	}
+}
+.category__nav {
+	ul {
+		padding: 0;
+		li {
+			list-style: none;
+			margin-top: 25px;
+			a {
+				font-size: 1.8rem;
+				color: map-get($color, text);
+				font-weight: 700;
+			}
+		}
+	}
+}
+.b-1 {
+	.item__seemore {
+		margin-top: 40px;
+	}
+}

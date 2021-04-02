@@ -1,0 +1,17 @@
+extends components/layouts/_layout.pug
+
+block var
+	- let title = 'Agency Registration';
+	- let bodyClass = 'agency-registration-page';
+	- let image__SubpageBanner = "./assets/banner/banner_cruises.jpg";
+	- let title__SubpageBanner = "Agent Hub";
+	- let subtitle__SubpageBanner = "Building a better way to work – together";
+
+block loading
+	include components/layouts/_loading
+block banner,breadcrumb
+	include components/layouts/_subpage-banner
+	include components/layouts/_breadcrumb
+block main
+	include components/agency-registration/ag-1
+block scripts

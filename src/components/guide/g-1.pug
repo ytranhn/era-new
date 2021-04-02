@@ -1,0 +1,31 @@
+section.productWrapper.pd-80
+	.container-fluid
+		.mainWrapper
+			.row
+				.col-lg-4.col-xl-3
+					include ../layouts/_tour-filter
+				.col-lg-8.col-xl-9
+					p.information 234 properties 
+						span in Guide
+					.row.hotel__list
+						- for(i=1;i<10;i++)
+							.col-sm-6.col-2xl-4.tourNewsItem__col
+								a.tourNewsItem(href="pre-guide.html")
+									.tourNewsItem__img.overflow-hidden
+										img.fullsize.object-cover(src="./assets/destinations/5.jpg")
+									.tourNewsItem__content
+										.tourNewsItem__note
+											span #Tour Guide
+										h4.tourNewsItem__title Ha Long Bay, Vietnam
+										.tourNewsItem__rating.rating__bar
+											.star
+											.star__color(data-rating="0.7")
+										.tourNewsItem__bottom
+											.tourNewsItem__price
+												span From 
+												b $500
+											span.btn.btn__submit See more
+					.row
+						.col-12.formTourSearch__loadmore.text-center
+							a.text-uppercase Load more 
+							span.fas.fa-redo-alt

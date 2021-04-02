@@ -1,0 +1,163 @@
+.payment-2 {
+	.form-profile {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-bottom: 30px;
+		label {
+			-ms-flex: 0 0 230px;
+			flex: 0 0 230px;
+			max-width: 230px;
+			font-weight: 300;
+			@media (max-width: 767.98px) {
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+		}
+		.form-checked {
+			justify-content: initial;
+			.form-group {
+				flex: 0 0 150px;
+				max-width: 150px;
+				display: flex;
+			}
+			label {
+				padding: 0;
+				&::before {
+					content: '\f111';
+				}
+			}
+			input:checked ~ label {
+				&::before {
+					content: '\f2f8';
+					// font-weight: 600;
+				}
+			}
+		}
+		.form-group {
+			padding: 0;
+			margin: 0;
+			-ms-flex-preferred-size: 0;
+			flex-basis: 0;
+			-ms-flex-positive: 1;
+			flex-grow: 1;
+			max-width: 100%;
+			input {
+				font-size: 2.4rem;
+				color: #707070;
+				background: none;
+			}
+			.select {
+				width: 145px;
+				position: absolute;
+				select {
+					width: 145px;
+					border-radius: 12px 0 0 12px;
+					box-shadow: none;
+					background: none;
+				}
+				+ input {
+					padding-left: 155px;
+				}
+			}
+			@media (max-width: 767.98px) {
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+		}
+	}
+	.formTourSearchItem {
+		margin-bottom: 65px;
+		.formTourSearchItem__content {
+			font-size: 2.8rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			h4 {
+				margin-bottom: 50px;
+			}
+		}
+	}
+	.btn__submit {
+		width: 342px;
+	}
+	.btn__submit--reverse {
+		width: 100%;
+	}
+	.voucher {
+		font-size: 1.8rem;
+		color: map-get($color, main);
+		span {
+			font-size: 2.4rem;
+			margin-right: 10px;
+		}
+	}
+}
+.form-profile {
+	label {
+		font-size: 24px;
+		span {
+			color: map-get($color, main);
+		}
+	}
+}
+.billingPayment__wrapper {
+	padding: 30px;
+	@media (max-width: 1199.98px) {
+		padding: 20px;
+	}
+	@media (max-width: 767.98px) {
+		padding: 10px;
+	}
+}
+
+.billingPayment__content {
+	border: 1px solid #b0b0b0;
+	width: 100%;
+	max-width: 810px;
+	padding: 10px;
+	max-height: 300px;
+	overflow-y: auto;
+	p {
+		text-transform: initial;
+		font-weight: normal;
+		font-size: 1.6rem;
+		margin-bottom: 15px;
+	}
+	@media (max-width: 767.98px) {
+		margin: 0;
+	}
+}
+.billingPayment__checkbox {
+	margin-top: 20px;
+	.form__group {
+		+ .form__group {
+			margin-top: 20px;
+		}
+	}
+}
+.billingPayment__method {
+	p {
+		font-size: 2.4rem;
+		color: map-get($color, text);
+	}
+}
+.billingPayment__agree {
+	margin-top: 20px;
+	.form__checkbox--custom-1 {
+		span {
+			-webkit-box-orient: unset;
+			-webkit-line-clamp: unset;
+			display: flex;
+		}
+	}
+}
+.billingPayment__buttons {
+	margin-top: 20px;
+	.btn__submit--reverse {
+		padding: 0 25px;
+		height: 55px;
+	}
+	@media (max-width: 767.98px) {
+		text-align: center;
+	}
+}

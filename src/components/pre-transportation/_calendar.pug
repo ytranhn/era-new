@@ -1,0 +1,25 @@
+.pd-50
+	.tourDetailCalendar.shadow--1
+		.tourDetailCalendar__title
+			h2.fw-700 Giá từ:
+			.tourDetailCalendar__price
+				p.price__decrease
+					span Valued at
+					del đ 1,200,000
+				h4 960,000đ
+					span /Ngày
+		.tourDetailCalendar__form
+			.form__group--type-1
+				label
+					span.text-uppercase.form__title SỐ NGÀY THUÊ
+					input.form__control(type="number" placeholder="Nhập số")
+			.form__group--type-1
+				label
+					span.text-uppercase.form__title NGÀY BẮT ĐẦU
+					input.form__control#date-choosen(type="text" placeholder="Add Dates")
+			.form__group--type-1.form__group--date
+				label
+					input.d-none#tour-detail-calendar(type="text" data-date data-date-inline="true" data-date-target="#date-choosen")
+			.form__button
+				button.btn.btn__submit--reverse ĐẶT XE
+		

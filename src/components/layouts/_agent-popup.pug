@@ -1,0 +1,29 @@
+section.agent-login(style="display :none" id="login")
+	.title
+		h2.main-title Đăng nhập
+		p Hãy đăng nhập để tiếp tục quy trình
+	form
+		.form-wrapper
+			.form-group
+				input(type="text", name="", placeholder="User name or Email Address")
+			.form-group
+				input(type="password", name="", placeholder="Password")
+			.form-group
+				a(href="#" style="color: #f07c00") Forget Your Password?
+			.form-group
+				button(type="submit") Đăng nhập
+	.login-social
+		p Or connect with:
+		ul
+			li
+				a.facebook.d-block(href="#")
+					em.fab.fa-facebook-square
+					span Facebook
+			li
+				a.google.d-block(href="#")
+					em.fab.fa-google
+					span Google
+		.follow
+			p Chưa có tài khoản?
+			a(href="user-registration.html") Cá nhân
+			a(href="agency-registration.html") Đại lý

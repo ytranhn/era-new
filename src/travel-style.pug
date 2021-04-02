@@ -1,0 +1,17 @@
+extends components/layouts/_layout.pug
+
+block var
+	- let title = 'Travel Style';
+	- let bodyClass = 'product-page';
+	- let image__SubpageBanner = "./assets/banner/banner_cruises.jpg";
+	- let title__SubpageBanner = "Travel Style";
+	- let subtitle__SubpageBanner = "Time is short. Take time to travel ";
+
+block loading
+	include components/layouts/_loading
+block banner,breadcrumb
+	include components/layouts/_subpage-banner
+	include components/travel-style/search
+block main
+	include components/travel-style/t-1
+block scripts

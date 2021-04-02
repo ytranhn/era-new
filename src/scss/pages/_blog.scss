@@ -1,0 +1,146 @@
+.blogWrapper {
+	padding-top: 50px;
+	@media (max-width: 767.98px) {
+		padding-top: 30px;
+	}
+}
+.blogWrapper__list {
+	.tourNewsItem__img {
+		@include imgscale(230/410);
+	}
+}
+.tourNewsItem__col {
+	margin-bottom: 30px;
+}
+
+.blogDetail__content {
+	margin-top: 3.5rem;
+	p,
+	ul,
+	img {
+		color: map-get($color, text);
+		font-size: 1.6rem;
+		+ p,
+		+ ul,
+		+ img {
+			margin-top: 2rem;
+		}
+	}
+	img {
+		display: block;
+		border-radius: 8px;
+		overflow: hidden;
+		width: 100%;
+	}
+	@media (max-width: 1024.98px) {
+		text-align: justify;
+	}
+}
+
+.table__tip {
+	border: 1px solid #b0b0b0;
+	border-radius: 8px;
+	box-shadow: 0 0 10px 0 rgba(#000, 0.1);
+	margin-top: 30px;
+}
+.tip__title {
+	padding: 15px 0;
+	border-bottom: 1px solid #b0b0b0;
+	text-align: center;
+	p {
+		font-size: 1.6rem;
+		font-weight: 700;
+		color: #707070;
+		text-transform: uppercase;
+	}
+	h3 {
+		font-size: 2.6rem;
+		color: map-get($color, main);
+		font-weight: 700;
+		margin-top: 15px;
+	}
+}
+.table {
+	padding: 25px;
+	position: relative;
+	tr {
+		td {
+			vertical-align: top;
+			padding: 20px;
+			padding-right: 0;
+		}
+		th {
+			vertical-align: top;
+			border-right: 1px solid #b0b0b0;
+			padding: 20px;
+			padding-left: 0;
+			font-size: 2.4rem;
+			color: map-get($color, text);
+		}
+		&:first-child {
+			padding-top: 0;
+		}
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+	@media (max-width: 1199.98px) {
+		padding: 20px;
+	}
+	@media (max-width: 1024.98px) {
+		tr {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 10px 0 20px 0;
+			&:not(:last-child) {
+				border-bottom: 1px solid #b0b0b0;
+			}
+			th,
+			td {
+				border: 0;
+				-ms-flex: 0 0 100%;
+				flex: 0 0 100%;
+				max-width: 100%;
+				padding: 0;
+			}
+			td {
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+.blogWrapper--detail {
+	@media (max-width: 1024.98px) {
+		.col-lg-4.col-xl-3 {
+			order: 2;
+		}
+		.col-lg-8.col-xl-9 {
+			order: 1;
+		}
+		.tourNewsNavigation:not(.tourNewsNavigation--popular) {
+			display: none;
+		}
+		.tourNewsNavigation--popular {
+			padding-bottom: 50px;
+			margin-top: 0;
+		}
+	}
+	@media (max-width: 767.98px) {
+		.tourNewsNavigation--popular {
+			padding-bottom: 30px;
+		}
+	}
+}
+
+.tourNewsItem.blogItem {
+	.tourNewsItem__title {
+		margin-bottom: 0;
+	}
+	.tourNewsItem__review {
+		margin-top: 20px;
+	}
+	.tourNewsItem__description {
+		margin-top: 15px;
+	}
+}

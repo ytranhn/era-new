@@ -1,0 +1,24 @@
+extends components/layouts/_layout.pug
+
+block var
+	- let title = 'Destinations';
+	- let bodyClass = 'destination-page';
+	- let image__SubpageBanner = "./assets/banner/banner_destination.jpg";
+	- let title__SubpageBanner = "Vietnam";
+	- let subtitle__SubpageBanner = "Create a fully customizedday-by-day itinerary for free";
+
+block loading
+	include components/layouts/_loading
+block banner,breadcrumb
+block main
+	include components/layouts/_subpage-banner
+	include components/transportation/search
+	include components/destination/nav
+	include components/destination/de-1
+	include components/destination/de-2
+	include components/destination/de-3
+	include components/destination/de-4
+	include components/destination/de-5
+	include components/destination/de-6
+	include components/index/i-7
+block scripts

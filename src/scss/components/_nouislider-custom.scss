@@ -1,0 +1,27 @@
+.noUi-target {
+	height: 4px;
+	border: 0;
+	background-color: #d6d6d6;
+	box-shadow: none;
+}
+
+.noUi-horizontal {
+	.noUi-handle {
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		background-color: map-get($color, main);
+		box-shadow: none;
+		border: 0;
+		right: -9px;
+		top: -7px;
+		cursor: pointer;
+		&:before,
+		&:after {
+			content: none;
+		}
+	}
+}
+.noUi-connect {
+	background-color: map-get($color, main);
+}

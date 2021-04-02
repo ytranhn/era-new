@@ -1,0 +1,40 @@
+.premadeTour.tourDetail--top
+	.container-fluid
+		.mainWrapper
+			include ../layouts/tour-detail/_general
+			.tourDetail__tabSections
+				ul.scrollspyWrapper
+					li
+						a(data-target="tabSection-1") Overview
+					li
+						a(data-target="tabSection-2") facilities
+					li
+						a(data-target="tabSection-3") Room Types
+					li
+						a(data-target="tabSection-4") Area info
+					li
+						a(data-target="tabSection-5") REVIEWS
+				.list-button
+					.button__item.btn.btn-icon
+						.icon
+							img(src='./assets/icons/share.svg' alt='')
+						span SHARE
+					.button__item.btn.btn-icon
+						.icon
+							img(src='./assets/icons/printer.svg' alt='')
+						span PRINT
+.premadeTour
+	.container-fluid
+		.mainWrapper
+			.row
+				.col-xl-8.col-lg-7
+					include ../layouts/tour-detail/_photo
+					include content
+					div(data-id="tabSection-5")
+						include ../layouts/tour-detail/_review
+				.col-xl-4.col-lg-5.cartAside__col
+					include _calendar
+					include _type
+					include ../layouts/tour-detail/_discount
+					.cartAside__colWrapper
+						include _cart-aside

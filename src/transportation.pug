@@ -1,0 +1,17 @@
+extends components/layouts/_layout.pug
+
+block var
+	- let title = 'Transportation';
+	- let bodyClass = 'product-page';
+	- let image__SubpageBanner = "./assets/banner/banner_transportation.jpg";
+	- let title__SubpageBanner = "Transportation";
+	- let subtitle__SubpageBanner = "We provides the best transfer services for both individual travellers and meeting groups in Vietnam";
+
+block loading
+	include components/layouts/_loading
+block banner,breadcrumb
+	include components/layouts/_subpage-banner
+	include components/transportation/search
+block main
+	include components/transportation/t-1
+block scripts

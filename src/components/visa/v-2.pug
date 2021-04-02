@@ -1,0 +1,28 @@
+section.visaInfomation
+	.container
+		.form-wrapper
+			p.form-title Message us
+			form.row(action="#")
+				.col-lg-12
+					.form-group
+						input(type="text", name="", placeholder="Your name")
+				.col-lg-12
+					.form-group
+						input(type="email", name="", placeholder="Your email")
+				.col-lg-12
+					.form-group
+						.select
+							select(name="" required)
+								option(value="" selected disabled hidden) -- Seclect Country --
+								-for(i=1;i<5;i++)
+									option(value="#") Option #{i}
+				.col-lg-12
+					.form-group
+						textarea(name="", cols="30", rows="10", placeholder="Message")
+				.col-lg-12
+					.form-group
+						img(src="./assets/contact/2.png", alt="")
+				.col-lg-12
+					.form-group
+						.button
+							button(type="submit") Send message

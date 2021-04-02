@@ -1,0 +1,22 @@
+.breadcrumb__list {
+	padding-left: 0;
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.breadcrumb__item {
+	+ .breadcrumb__item {
+		&:before {
+			margin: 0 5px;
+			content: '>';
+			color: #b0b0b0;
+		}
+	}
+}
+.breadcrumb__link {
+	color: #b0b0b0;
+	font-size: 1.4rem;
+	font-weight: 600;
+}

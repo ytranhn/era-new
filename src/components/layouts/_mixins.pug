@@ -1,0 +1,9 @@
+mixin breadcrumb(breadcrumbArray)
+	.stepBreadcrumb.shadow--1
+		.container-fluid
+			.mainWrapper
+				ul.d-flex.list-style-none
+					each val, index in breadcrumbArray
+						li.stepBreadcrumb__item.text-center(class=val.active ? 'active':'')
+							span.stepBreadcrumb__number.d-flex.flex-center= index+1
+							a.stepBreadcrumb__link(href=val.url)= val.title

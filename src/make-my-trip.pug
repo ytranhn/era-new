@@ -1,0 +1,16 @@
+extends components/layouts/_layout
+
+block var
+	- let title = 'Page | Make My Trip';
+	- let bodyClass = 'make-trip-page';
+	- let breadcrumb = [{title: 'Basic Information',url: "#",active:true},{title: 'Destinations',url: "#",active:true},{title: 'Hotels',url: "#",active:true},{title: 'Premade Tours',url: "#"},{title: 'Cruises',url: "#"},{title: 'Transportations',url: "#"},{title: 'Tour Guide',url: "#"}]
+
+block loading
+	include components/layouts/_loading
+block banner,breadcrumb
+block main
+	include components/make-my-trip/m-1
+	+breadcrumb(breadcrumb)
+	include components/make-my-trip/m-2
+	include components/index/i-7
+block scripts

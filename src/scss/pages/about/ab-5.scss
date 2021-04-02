@@ -1,0 +1,94 @@
+.story {
+	.mainWrapper {
+		@media (max-width: 767.98px) {
+			padding-bottom: 30px;
+		}
+	}
+}
+
+.story__years {
+	position: relative;
+	&:before {
+		content: '';
+		height: 5px;
+		width: 100%;
+		background-color: #d6d6d6;
+		position: absolute;
+		top: 13px;
+		left: 0;
+	}
+}
+.yearItem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	&:hover,
+	&.slide-active {
+		.yearItem__icon {
+			background: map-get($color, main);
+		}
+		.yearItem__text {
+			color: map-get($color, main);
+		}
+	}
+}
+.yearItem__icon {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #d6d6d6;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+.yearItem__text {
+	cursor: pointer;
+	font-size: 1.5rem;
+	color: #b0b0b0;
+	font-weight: 700;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+.background-img {
+	background: #000;
+	img {
+		opacity: 0.75;
+	}
+}
+.story__itemsPerYear {
+	.perYear__item {
+		.image {
+			a {
+				display: block;
+			}
+			img {
+				@media (max-width: 575.98px) {
+					display: block;
+					margin: 0 auto;
+				}
+			}
+		}
+		.season {
+			font-size: 1.5rem;
+			color: map-get($color, text);
+			@media (max-width: 575.98px) {
+				text-align: center;
+			}
+		}
+		.name-event {
+			font-size: 2rem;
+			color: map-get($color, main);
+			@media (max-width: 575.98px) {
+				text-align: center;
+				display: block;
+			}
+		}
+	}
+	.swiper-slide {
+		opacity: 0.3;
+		transition: all 0.3s ease;
+		&.slide-active {
+			opacity: 1;
+		}
+	}
+}

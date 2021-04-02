@@ -1,0 +1,17 @@
+extends components/layouts/_layout.pug
+
+block var
+	- let title = 'Cruises';
+	- let bodyClass = 'product-page';
+	- let image__SubpageBanner = "./assets/banner/banner_cruises.jpg";
+	- let title__SubpageBanner = "Cruises";
+	- let subtitle__SubpageBanner = "Whatever your needs, our excellent selection of cruises";
+
+block loading
+	include components/layouts/_loading
+block banner,breadcrumb
+	include components/layouts/_subpage-banner
+	include components/cruises/search
+block main
+	include components/cruises/c-1
+block scripts

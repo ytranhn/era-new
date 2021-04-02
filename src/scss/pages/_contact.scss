@@ -1,0 +1,107 @@
+.contact-wrapper {
+	.main-title {
+		text-align: left;
+		padding-bottom: 40px;
+		@media (max-width: 575.98px) {
+			padding-bottom: 20px;
+		}
+	}
+	form {
+		padding-top: 60px;
+		@media (max-width: 575.98px) {
+			padding-top: 30px;
+		}
+	}
+	.contact-title {
+		font-size: 3.2rem;
+		color: map-get($color, text);
+		font-weight: 700;
+		text-transform: uppercase;
+		padding-bottom: 30px;
+		margin-bottom: 50px;
+		&.line {
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100px;
+				height: 6px;
+				background: map-get($color, main);
+			}
+		}
+		@media (max-width: 1024.98px) {
+			font-size: 3.2rem;
+			padding-bottom: 22px;
+		}
+		@media (max-width: 767.98px) {
+			font-size: 2.4rem;
+			margin-bottom: 24px;
+		}
+	}
+	.content {
+		p {
+			font-size: 1.8rem;
+			span {
+				font-size: 2rem;
+				color: map-get($color, text);
+				font-weight: 700;
+				&.email {
+					color: map-get($color, main);
+				}
+			}
+			a {
+				// font-size: 2rem;
+				font-weight: 700;
+				color: map-get($color, main);
+			}
+			// @media (max-width: 1024.98px) {
+			// 	font-size: 1.8rem;
+			// 	span {
+			// 		font-size: 2rem;
+			// 	}
+			// 	a {
+			// 		font-size: 2rem;
+			// 	}
+			// }
+			// @media (max-width: 575.98px) {
+			// 	font-size: 1.6rem;
+			// 	span {
+			// 		font-size: 1.8rem;
+			// 	}
+			// 	a {
+			// 		font-size: 1.8rem;
+			// 	}
+			// }
+		}
+		.contact,
+		.social {
+			padding-top: 80px;
+			@media (max-width: 1024.98px) {
+				padding-top: 10px;
+			}
+			@media (max-width: 575.98px) {
+				padding-top: 20px;
+			}
+		}
+	}
+}
+.contact__socials {
+	@extend .footer__socials;
+	margin-top: 45px;
+	li {
+		margin: 0 20px;
+	}
+	a {
+		font-size: 3rem;
+		color: #333;
+	}
+	@media (max-width: 575.98px) {
+		margin-top: 25px;
+		margin-bottom: 25px;
+		a {
+			font-size: 4rem;
+		}
+	}
+}

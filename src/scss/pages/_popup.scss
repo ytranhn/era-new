@@ -1,0 +1,236 @@
+.agent-login,
+.popup-2 {
+	max-width: 630px;
+	width: 100%;
+	overflow: hidden;
+	.title {
+		padding-bottom: 15px;
+		border-bottom: 1px solid #d6d6d6;
+		.main-title {
+			text-align: left;
+			padding-bottom: 30px;
+			@media (max-width: 575.98px) {
+				margin: 0;
+			}
+		}
+		p {
+			font-size: 2.4rem;
+		}
+	}
+	form {
+		margin-top: 24px;
+		.form-password {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			a {
+				font-size: 2.4rem;
+				color: map-get($color, main);
+				text-decoration: underline;
+				@media (max-width: 575.98px) {
+					font-size: 1.6rem;
+					margin-top: 10px;
+				}
+			}
+			@media (max-width: 575.98px) {
+				flex-direction: column;
+				margin-bottom: 24px;
+				label {
+					width: max-content;
+				}
+			}
+		}
+		.form-group {
+			label {
+				font-size: 2.4rem;
+				color: #333;
+				padding: 0;
+			}
+			button {
+				max-width: initial;
+				height: 63px;
+				font-size: 3rem;
+			}
+		}
+		@media (max-width: 575.98px) {
+			margin-top: 30px;
+		}
+	}
+	.login-social {
+		p {
+			padding-bottom: 24px;
+			font-size: 2.4rem;
+			@media (max-width: 575.98px) {
+				padding: 20px 0;
+				font-size: 1.8rem;
+			}
+		}
+		ul {
+			padding: 0;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			li {
+				list-style: none;
+				flex: 0 0 50%;
+				max-width: 50%;
+				@media (max-width: 575.98px) {
+					flex: 0 0 100%;
+					max-width: 100%;
+					.facebook,
+					.google {
+						margin: 0;
+						margin-top: 10px;
+					}
+				}
+			}
+			a {
+				padding: 0 25px;
+				font-size: 2.4rem;
+				font-weight: 700;
+				color: map-get($color, trang);
+				height: 60px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 8px;
+				em {
+					font-size: 31px;
+					margin-right: 20px;
+				}
+			}
+			.facebook {
+				background: #4267b2;
+				margin-right: 10px;
+			}
+			.google {
+				background: #ee3f37;
+				margin-left: 10px;
+			}
+		}
+		.follow {
+			display: flex;
+			align-items: center;
+			position: relative;
+			margin-top: 37px;
+			p {
+				padding-bottom: 0;
+			}
+			a {
+				font-size: 2.4rem;
+				font-weight: 700;
+				text-decoration: underline;
+				color: map-get($color, main);
+				margin-left: 20px;
+				// &::after {
+				// 	content: '\f078';
+				// 	position: absolute;
+				// 	top: 50%;
+				// 	right: 0;
+				// 	transform: translateY(-50%);
+				// 	font-family: 'Font Awesome 5 Pro';
+				// 	font-size: 24px;
+				// 	color: map-get($color, main);
+				// }
+			}
+			@media (max-width: 575.98px) {
+				flex-direction: column;
+				p {
+					padding: 20px 0;
+				}
+				a {
+					font-size: 1.6rem;
+					position: relative;
+					margin: 0;
+					&::after {
+						right: -10%;
+						font-size: 1.6rem;
+					}
+				}
+			}
+		}
+	}
+}
+.agent-login {
+	.title {
+		.main-title {
+			margin-bottom: 10px;
+			padding-bottom: 0;
+		}
+	}
+	.form-password {
+		@media (max-width: 575.98px) {
+			.form-group {
+				margin-bottom: 0;
+				label {
+					font-size: 1.6rem;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	@media (max-width: 1024.98px) {
+		min-width: unset;
+	}
+}
+
+.popup-2 {
+	.icon-checked {
+		text-align: center;
+	}
+	.main-title {
+		margin-top: 35px;
+	}
+	h3 {
+		font-size: 3.6rem;
+		color: map-get($color, text);
+		text-align: center;
+		font-weight: 700;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #d6d6d6;
+		span {
+			color: map-get($color, main);
+		}
+		@media (max-width: 575.98px) {
+			font-size: 2.4rem;
+		}
+	}
+	p {
+		padding-top: 20px;
+		font-size: 2.4rem;
+		text-align: center;
+		@media (max-width: 575.98px) {
+			font-size: 1.6rem;
+		}
+	}
+	a.btn__submit--reverse {
+		height: 60px;
+		width: 100%;
+		margin-top: 60px;
+		font-size: 3rem;
+		border-radius: 8px;
+		@media (max-width: 1199.98px) {
+			margin-top: 40px;
+		}
+		@media (max-width: 767.98px) {
+			margin-top: 20px;
+		}
+	}
+}
+.fancybox-content {
+	&:not(#tourSearch__form) {
+		.fancybox-close-small {
+			top: 10px !important;
+			right: 10px !important;
+		}
+		@media (max-width: 575.98px) {
+			height: 500px;
+			overflow-y: scroll;
+			padding: 20px;
+			.main-title {
+				font-size: 2.6rem;
+				padding: 0;
+			}
+		}
+	}
+}

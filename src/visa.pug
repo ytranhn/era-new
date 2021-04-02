@@ -1,0 +1,42 @@
+extends components/layouts/_layout.pug
+
+block var
+	- let title = 'Page | Visa';
+	- let bodyClass = 'visa-page';
+	- let image__SubpageBanner = "./assets/banner/banner_visa.jpg";
+	- let title__SubpageBanner = "Visa";
+	- let subtitle__SubpageBanner = "Want to find out how Era can solve problems specifict to your travel? Let’s talk";
+block loading
+	include components/layouts/_loading
+block banner,breadcrumb
+	include components/layouts/_subpage-banner
+block main
+	section.subpage-tab-navigation
+		.container-fluid
+			.mainWrapper
+				.row.no-gutters
+					.col-3xl-2
+					.col
+						.subpage-tab-navigation-wrapper.has-list-button
+							ul.list-nav
+								li.nav__item.active
+									a.nav__link VISA FEE
+								li.nav__item
+									a.nav__link VISA DOCUMENT
+								li.nav__item
+									a.nav__link How to get the visa at airport
+								li.nav__item
+									a.nav__link E- VISA
+							.list-button
+								.button__item.btn.btn-icon
+									.icon
+										img(src="./assets/icons/share.svg", alt="")
+									span SHARE
+								.button__item.btn.btn-icon
+									.icon
+										img(src="./assets/icons/printer.svg", alt="")
+									span PRINT
+	section.Visa.max-width--1160px.pd-80
+		include ./components/visa/v-1
+		include ./components/visa/v-2
+block scripts

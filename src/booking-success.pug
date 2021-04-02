@@ -1,0 +1,13 @@
+extends components/layouts/_layout.pug
+
+block var
+	- let title = 'Booking Success';
+	- let bodyClass = 'booking-success-page';
+
+block loading
+	include components/layouts/_loading
+block banner,breadcrumb
+block main
+	include ./components/booking-success/b-1
+	include ./components/booking-success/b-2
+block scripts

@@ -1,0 +1,16 @@
+extends components/layouts/_layout.pug
+
+block var
+	- let title = 'Checkout';
+	- let bodyClass = 'checkout-page';
+	- let breadcrumb = [{title: 'Review your plan',url: "#",active:true},{title: 'Billing Information',url: "#",active:false},{title: 'List of Tourists',url: "#",active:false},{title: 'Billing Payment',url: "#",active:false},{title: 'Terms of Payment',url: "#",active:false}]
+
+block loading
+	include components/layouts/_loading
+block banner,breadcrumb
+	//- include components/layouts/_subpage-banner
+	//- include components/layouts/_search-cruises
+block main
+	+breadcrumb(breadcrumb)
+	include components/checkout/c-1
+block scripts

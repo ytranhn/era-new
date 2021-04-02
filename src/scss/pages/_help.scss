@@ -1,0 +1,40 @@
+.help {
+	form {
+		margin: 10px 0;
+	}
+	.form__group--type-1 {
+		position: relative;
+		max-width: 542px;
+		margin: 0 auto;
+		height: 80px;
+		@media (max-width: 767.98px) {
+			height: 40px;
+		}
+	}
+	.form__control {
+		border: 1px solid #707070;
+		border-radius: 12px;
+		padding-right: 160px;
+	}
+	.btn__submit--reverse {
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 100%;
+		padding: 0 42px;
+		box-shadow: unset;
+	}
+	.main-title {
+		font-size: 4.8rem;
+		font-weight: 500;
+	}
+	.form__group--type-1 {
+		max-width: 645px;
+		height: 50px;
+	}
+	.text-center {
+		font-size: 2rem;
+		font-weight: 600;
+		margin-top: 15px;
+	}
+}

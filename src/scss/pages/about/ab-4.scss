@@ -1,0 +1,35 @@
+.ourCommitment__content {
+	width: 100%;
+	max-width: 1240px;
+	margin: 0 auto;
+	p {
+		font-size: 2rem;
+		@media (max-width: 1024.98px) {
+			font-size: 1.6rem;
+		}
+	}
+}
+.ourCommitment__subTitle {
+	width: 100%;
+	max-width: 875px;
+	margin: 0 auto;
+	h3 {
+		padding-top: 85px;
+		font-size: 3.6rem;
+		font-weight: 700;
+		color: map-get($color, text);
+		@media (max-width: 767.98px) {
+			padding-top: 30px;
+		}
+		@media (max-width: 1024.98px) {
+			font-size: 2.4rem;
+		}
+	}
+}
+.aboutSubBanner {
+	.image {
+		img {
+			opacity: 0.75;
+		}
+	}
+}

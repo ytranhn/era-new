@@ -1,0 +1,152 @@
+.checkout__fillingInformations,
+.checkout__touristList,
+.checkout__billingPayment,
+.checkout__terms {
+	border-top: 1px solid #20284f;
+}
+.checkout {
+	.makeMyTripOptions__sectionTitle {
+		margin-bottom: 50px;
+		@media (max-width: 1199.98px) {
+			margin-bottom: 35px;
+		}
+		@media (max-width: 767.98px) {
+			margin-bottom: 20px;
+		}
+	}
+	.form-profile .form-group .select select {
+		border-radius: 6px;
+	}
+	.form-wrapper .form-group input[type='date'],
+	.form-wrapper .form-group input[type='email'],
+	.form-wrapper .form-group input[type='number'],
+	.form-wrapper .form-group input[type='password'],
+	.form-wrapper .form-group input[type='text'],
+	.form-wrapper .form-group select,
+	.form-wrapper .form-group textarea {
+		border-radius: 6px;
+	}
+}
+.form-group__selects {
+	display: flex;
+	input {
+		-ms-flex: 0 0 225px;
+		flex: 0 0 225px;
+		max-width: 25%;
+		+ input {
+			margin-left: 20px;
+		}
+	}
+}
+.checkout__fillingInformationsContent {
+	p,
+	ul,
+	ol {
+		color: #1b1c1d;
+	}
+	ul {
+		padding-left: 20px;
+	}
+}
+.checkoutTouristItem {
+	+ .checkoutTouristItem {
+		margin-top: 80px;
+		@media (max-width: 1199.98px) {
+			margin-top: 65px;
+		}
+		@media (max-width: 767.98px) {
+			margin-top: 50px;
+		}
+	}
+}
+.checkout__note {
+	margin-top: 20px;
+	font-size: 2.4rem;
+	margin-bottom: 20px;
+	font-weight: 700;
+	span:nth-child(1) {
+		color: map-get($color, main);
+	}
+}
+.checkoutTouristItem__title {
+	height: 80px;
+	border: 1px solid #dddddd;
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+	margin-bottom: 25px;
+	p {
+		font-size: 2.8rem;
+		color: map-get($color, text);
+		&:nth-child(2) {
+			margin-left: 50px;
+			color: map-get($color, main);
+			text-transform: none;
+		}
+	}
+	@media (max-width: 1199.98px) {
+		height: 65px;
+	}
+	@media (max-width: 767.98px) {
+		height: 50px;
+	}
+}
+.checkout__touristList--wrapper {
+	.cartAside__voucher {
+		max-width: 560px;
+		width: 100%;
+
+		.input__control {
+			height: 80px;
+			font-size: 2.4rem;
+			@media (max-width: 1199.98px) {
+				height: 65px;
+			}
+			@media (max-width: 767.98px) {
+				height: 50px;
+			}
+		}
+		.btn__submit {
+			font-size: 2.4rem;
+			padding: 0 60px;
+			@media (max-width: 1199.98px) {
+				padding: 0 40px;
+			}
+			@media (max-width: 767.98px) {
+				padding: 0 20px;
+			}
+		}
+	}
+}
+.checkout__billingPayment--wrapper {
+	font-size: 2.4rem;
+	padding: 40px;
+	border: 1px solid #d6d6d6;
+	p {
+		color: map-get($color, text);
+	}
+	.form__radio--custom-1 {
+		margin-top: 20px;
+	}
+	@media (max-width: 1199.98px) {
+		padding: 25px;
+	}
+	@media (max-width: 767.98px) {
+		padding: 10px;
+	}
+}
+.checkout__termsScrollbox {
+	height: 500px;
+	overflow-y: auto;
+	border: 1px solid #d6d6d6;
+	border-radius: 6px;
+	padding: 20px;
+	margin-top: 30px;
+}
+.checkout__termsAgree {
+	margin-top: 20px;
+}
+.checkout__termsButtons {
+	margin-top: 20px;
+}

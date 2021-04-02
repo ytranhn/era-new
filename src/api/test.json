@@ -1,0 +1,14 @@
+{
+	"code": 200,
+	"result": {
+		"message": "Lorem là test",
+		"products": [
+			{
+				"id": 1,
+				"description": "lorem products 1",
+				"title": "Product 1",
+				"url": "/product-1"
+			}
+		]
+	}
+}

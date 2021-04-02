@@ -1,0 +1,97 @@
+header.mainHeader.mainHeader--index
+	.container-fluid
+		.mainWrapper
+			.header__top.d-flex.align-center
+				.header__logo
+					a(href="/")
+						img(src="./assets/logo.svg")
+				.header__search.ml-auto
+					.header__searchIcon
+						span.fal.fa-search
+					form.header__searchWrapper
+						input#header__search(type="text", name="Search", placeholder="Find Destination")
+						button.d-flex.flex-center
+							span.fal.fa-search
+				.header__makeMyTrip
+					a.text-uppercase(href="make-my-trip.html") Make my trip
+					a(href="help.html") Help
+				.header__language
+					select#header__language(name="Language")
+						option EN
+						option VI
+						option FR
+				.header__currency
+					span USD ($)
+				.header__cart()
+					a(href="checkout.html").header__cartIcon
+						span.far.fa-shopping-cart
+						span.header__cartText.desktop Cart
+						span.header__cartNumber.flex-center.d-flex 29
+				.header__toggleMobile.mobile.d-flex.align-center
+					span.fal.fa-bars
+			.header__bottom.d-flex.align-center
+				.header__nav.d-flex
+					.header__navItem
+						a.header__navLink(href="/")
+							span.fas.fa-home-lg-alt
+							span HOME
+					.header__navItem
+						a.header__navLink(href="destination.html")
+							span Destination
+					.header__navItem.header__navItem--hasSub
+						a.header__navLink(href="travel-style.html")
+							span TRAVEL STYLES
+						span.fal.fa-chevron-down.js__toggleNavSub
+						.header__navSub
+							.js__closeNavSub.mobile
+								span.fal.fa-chevron-down
+								span Back
+							.header__navItem
+								a.header__navLink(href="travel-style.html")
+									span Day Trip Excursion
+							.header__navItem
+								a.header__navLink(href="travel-style.html")
+									span Walking and Trekking
+							.header__navItem
+								a.header__navLink(href="travel-style.html")
+									span Cultural and Theme Tours
+							.header__navItem
+								a.header__navLink(href="travel-style.html")
+									span Tours and Sightseeing
+							.header__navItem
+								a.header__navLink(href="travel-style.html")
+									span Free and Easy Package
+					.header__navItem.header__navItem--hasSub
+						a.header__navLink(href="#")
+							span Travel Services
+						span.fal.fa-chevron-down.js__toggleNavSub
+						.header__navSub
+							.js__closeNavSub.mobile
+								span.fal.fa-chevron-down
+								span Back
+							.header__navItem
+								a.header__navLink(href="hotel.html")
+									span Hotel
+							.header__navItem
+								a.header__navLink(href="cruises.html")
+									span Cruises
+							.header__navItem
+								a.header__navLink(href="transportation.html")
+									span Transportation
+							.header__navItem
+								a.header__navLink(href="guide.html")
+									span Guide
+					.header__navItem.header__navItem--hasSub
+						a.header__navLink(href="blog.html")
+							span Blog
+					.header__navItem
+						a.header__navLink(href="about.html")
+							span About Us
+				.header__buttons.d-flex.align-center.ml-auto
+					a.btn.btn-contact(href="javascript:void(0)" data-fancybox="" data-src="#login") Đăng nhập
+					a.btn.btn-contact(href="contact.html") Contact Us
+.backdrop
+.header__mobile.mobile
+	.header__mobileWrapper
+include _agent-popup
+include _popup-2

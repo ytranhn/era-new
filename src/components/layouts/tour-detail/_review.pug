@@ -1,0 +1,125 @@
+.tourDetail__information.tourDetail__section.tourDetail__information--review
+	.tourDetail__informationTitleBlock
+		h2.tourDetail__title Customer Reviews
+		.tourDetail__contentToggle
+			p Sort by
+			span.tourDetail__ratingSort Date
+			span.tourDetail__ratingSort Rating
+	.tourDetail__content
+		.row.no-gutters
+			.review__data
+				.reviewStarItem
+					.reviewStarItem__number 20
+					.rating__bar
+						.star
+						.star__color(data-rating='1')
+				.reviewStarItem
+					.reviewStarItem__number 20
+					.rating__bar
+						.star
+						.star__color(data-rating='0.8')
+				.reviewStarItem
+					.reviewStarItem__number 20
+					.rating__bar
+						.star
+						.star__color(data-rating='0.6')
+				.reviewStarItem
+					.reviewStarItem__number 20
+					.rating__bar
+						.star
+						.star__color(data-rating='0.4')
+				.reviewStarItem
+					.reviewStarItem__number 20
+					.rating__bar
+						.star
+						.star__color(data-rating='0.2')
+
+			.review__comments
+				.reviewCommentItem
+					.reviewCommentItem__information
+						.reviewCommentItem__img
+							img(src="./assets/about/1.jpg", alt="")
+						.reviewCommentItem__personal
+							h4 Mina Young
+							p Vietnam
+					.reviewCommentItem__review
+						.rating__bar
+							.star
+							.star__color(data-rating='0.9')
+						p 324 reviews
+					.reviewCommentItem__content
+						h4 Well done route, captain - SUPER!
+						p It is very welcoming and friendly, which lifts the mood and the series of houses of wonderful architecture seems even more beautiful and leaves just a fabulous impression of Amsterdam. Ron and Nel in the form of a cheerful dialogue told interesting stories about Amsterdam and its inhabitants. Loved the tour and attractive price…
+						time March 5,2020
+				.reviewCommentItem
+					.reviewCommentItem__information
+						.reviewCommentItem__img
+							img(src="./assets/about/1.jpg", alt="")
+						.reviewCommentItem__personal
+							h4 Mina Young
+							p Vietnam
+					.reviewCommentItem__review
+						.rating__bar
+							.star
+							.star__color(data-rating='0.9')
+						p 324 reviews
+					.reviewCommentItem__content
+						h4 Well done route, captain - SUPER!
+						p It is very welcoming and friendly, which lifts the mood and the series of houses of wonderful architecture seems even more beautiful and leaves just a fabulous impression of Amsterdam. Ron and Nel in the form of a cheerful dialogue told interesting stories about Amsterdam and its inhabitants. Loved the tour and attractive price…
+						time March 5,2020
+				.reviewCommentItem
+					.reviewCommentItem__information
+						.reviewCommentItem__img
+							img(src="./assets/about/1.jpg", alt="")
+						.reviewCommentItem__personal
+							h4 Mina Young
+							p Vietnam
+					.reviewCommentItem__review
+						.rating__bar
+							.star
+							.star__color(data-rating='0.9')
+						p 324 reviews
+					.reviewCommentItem__content
+						h4 Well done route, captain - SUPER!
+						p It is very welcoming and friendly, which lifts the mood and the series of houses of wonderful architecture seems even more beautiful and leaves just a fabulous impression of Amsterdam. Ron and Nel in the form of a cheerful dialogue told interesting stories about Amsterdam and its inhabitants. Loved the tour and attractive price…
+						time March 5,2020
+				.formTourSearch__loadmore.text-center
+					a.text-uppercase Load more 
+					span.fas.fa-redo-alt
+.tourDetail__information.tourDetail__section.tourDetail__information--social.share-socials.justify-end
+	span SHARE THIS
+	a(href="#" style="--color:#32599D").btn.item-share-social
+		i.fab.fa-facebook-f
+	a(href="#" style="--color:#00C2EA").btn.item-share-social
+		i.fab.fa-twitter
+	a(href="#" style="--color:#DE0018").btn.item-share-social
+		i.fab.fa-pinterest-p
+	a(href="#" style="--color:#00679E").btn.item-share-social
+		i.fab.fa-linkedin-in
+		
+.tourDetail__information.tourDetail__section.tourDetail__information--writeReview.visaInfomation
+	.tourDetail__informationTitleBlock
+		h2.tourDetail__title Write your Review 
+	.tourDetail__content.form-wrapper
+		form(action="#")
+			.form-group
+				.tourDetail__rating
+					span Your rating
+					.rating__bar
+						.star
+						.star__color(editable="true" data-rating='0.9')
+				input.d-none(type="text" name="rating")
+			.form-group
+				input(type="text", name="", placeholder="Your name")
+			.form-group
+				input(type="email", name="", placeholder="Your email")
+			.form-group
+				.select
+					select(name="" required)
+						option(value="" selected disabled hidden) -- Seclect Country --
+						-for(i=1;i<5;i++)
+							option(value="#") Option #{i}
+			.form-group
+				textarea(name="", cols="30", rows="10", placeholder="Please write at least 100 characters about your experience at this destination.")
+			.form-group.form__button
+				button.btn__submit--reverse(type="submit") PUBLIC REVIEW

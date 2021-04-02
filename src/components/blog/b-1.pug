@@ -1,0 +1,28 @@
+.blogWrapper
+	.container-fluid
+		.mainWrapper
+			.row
+				.col-lg-4.col-xl-3
+					include ../layouts/_blog-navigation
+					//- include ../layouts/_blog-popular
+				.col-lg-8.col-xl-9.pb-80
+					.row.blogWrapper__list
+						- for(i = 0;i<9;i++)
+							.col-sm-6.col-2xl-4.tourNewsItem__col.blogItem__col
+								.tourNewsItem.blogItem
+									.tourNewsItem__img.overflow-hidden
+										a(href="blog-detail.html")
+											img.fullsize.object-cover(src="./assets/destinations/5.jpg")
+									.tourNewsItem__content
+										h4.tourNewsItem__title Climbing Vietnam’s fourth highest mountain peak, Bach Moc Luong Tu
+										.tourNewsItem__review.d-flex.align-center
+											.tourNewsItem__reviewContent
+												p By Xu Kien - July 26, 2020
+										.tourNewsItem__description
+											p Towering mountain peaks appeared before me as I held tightly onto rocky aiguilles before taking my next step. Bach Moc Luong Tu is a perfect venture for adventurers.
+										.tourNewsItem__button
+											a.fs-16.fw-700(href="#") See more
+					.row
+						.col-12.formTourSearch__loadmore.text-center
+							a.text-uppercase Load more 
+							span.fas.fa-redo-alt

@@ -1,0 +1,14 @@
+extends components/layouts/_layout.pug
+
+block var
+	- let title = 'Pre Guide';
+	- let bodyClass = 'pre-guide-page';
+
+block loading
+	include components/layouts/_loading
+block banner,breadcrumb
+	include components/layouts/_breadcrumb
+	include components/pre-guide/p-1
+	include components/index/i-7
+block main
+block scripts

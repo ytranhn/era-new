@@ -1,0 +1,55 @@
+.cartAside__mobileToggle
+	.cartAside__title
+		p Total
+		p.cartAside__totalPrice 8.490.000 đ
+		span.fal.fa-chevron-up
+.cartAside
+	.cartAside__title
+		p Total
+		p.cartAside__totalPrice 8.490.000 đ
+	.cartAside__wrapper
+		.cartAside__options
+			.cartAsideOption
+				.cartAsideOption__title
+					h4 CAR
+						a.fal.fa-edit(href="#")
+					.cartAsideOption__price 8.490.000 đ
+					span.fas.fa-chevron-down.cartAsideOption__iconToggle
+				.cartAsideOption__list
+					label.d-block.form__checkbox--custom-1
+						input(type="checkbox")
+						span Trekking in Sapa
+					label.d-block.form__checkbox--custom-1
+						input(type="checkbox")
+						span Explore Northen Cuisine in 2 days
+					label.d-block.form__checkbox--custom-1
+						input(type="checkbox")
+						span From Hoi An: Marble Mountain and …
+			.cartAsideOption
+				.cartAsideOption__title
+					h4 DISCOUNT
+						a.fal.fa-edit(href="#")
+					.cartAsideOption__price 8.490.000 đ
+					span.fas.fa-chevron-down.cartAsideOption__iconToggle
+				.cartAsideOption__list
+					label.d-block.form__checkbox--custom-1
+						input(type="checkbox")
+						span Trekking in Sapa
+					label.d-block.form__checkbox--custom-1
+						input(type="checkbox")
+						span Explore Northen Cuisine in 2 days
+					label.d-block.form__checkbox--custom-1
+						input(type="checkbox")
+						span From Hoi An: Marble Mountain and …
+		.cartAside__voucher
+			.form__group
+				label
+					span.fas.fa-gift
+				input.input__control(type="text" placeholder="Add voucher")
+				input.btn.btn__submit(type="Button" value="Apply")
+		.cartAside__buttons
+			.cartAside__buttonsWrapper
+				a.btn.btn__submit(href="javascript:void(0)") Add to cart
+				a.btn.btn__submit--reverse(href="checkout.html") Check out
+		block help
+			include ../layouts/_need-help

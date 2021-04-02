@@ -1,0 +1,112 @@
+section.agency-registration.pd-80
+	.container-fluid
+		.mainWrapper
+			.section__titleWrapper
+				h2.main-title.text-uppercase Agency registration
+				p.homeDescription Our experienced Era team is committed to delivering excellence in customer service by providing expert advice and sales support solutions to you and your customers.
+			form
+				.row
+					.col-lg-4.col-sm-6
+						label.form__group--type-2
+							span Your birthday *
+							.input__group
+								input(data-date type="text")
+					.col-lg-4.col-sm-6
+						label.form__group--type-2
+							span Last name
+							.input__group
+								input(type="text")
+					.col-lg-4.col-sm-6
+						label.form__group--type-2
+							span Email
+							.input__group
+								input(type="text")
+					.col-lg-4.col-sm-6
+						label.form__group--type-2
+							span Main Language
+							.input__group.input__group--select
+								select
+									option English
+									option Vietnamese
+									option Thailand
+					.col-lg-4.col-sm-6
+						label.form__group--type-2
+							span Company Name
+							.input__group
+								input(type="text")
+					.col-lg-4.col-sm-6
+						label.form__group--type-2
+							span Company Type
+							.input__group.input__group--select
+								select
+									option Company Type 1
+									option Company Type 1
+									option Company Type 1
+					.col-lg-4.col-sm-6
+						label.form__group--type-2
+							span Travel Network
+							.input__group.input__group--select
+								select
+									option(value="0")
+									option(value="1") English
+					.col-lg-5.col-sm-6
+						label.form__group--type-2
+							span Attached Business License 
+							.input__group
+								input(type="text")
+					.col-lg-8.col-sm-6
+						label.form__group--type-2
+							span Address
+							.input__group
+								input(type="text")
+					.col-lg-4.col-sm-6
+						label.form__group--type-2
+							span State/ Province
+							.input__group
+								input(type="text")
+					.col-lg-4.col-sm-6
+						label.form__group--type-2
+							span ZIP/ Post
+							.input__group
+								input(type="text")
+					.col-lg-4.col-sm-6
+						label.form__group--type-2
+							span Country
+							.input__group.input__group--select
+								select
+									option Country 1
+									option Country 1
+									option Country 1
+					.col-lg-4.col-sm-6
+						label.form__group--type-2
+							span City
+							.input__group
+								input(type="text")
+					.col-lg-4.col-sm-6
+						label.form__group--type-2
+							span Telephone
+							.input__group
+								input(type="text")
+					.col-lg-5
+						label.form__group--type-2
+							span Company Website
+							.input__group
+								input(type="text")
+					.col-lg-12
+						label.form__group--type-2
+							.form__group.form__subscribe
+								label.form__checkbox--custom-1
+									input(type="radio" name="Subscribe")
+									span Subscribe to Newsletter
+					.col-lg-12
+						.form__group.form__group--button.text-center
+							button.btn.btn__submit--reverse(type="submit" data-fancybox data-src="#congratulation") Submit
+.d-none
+	section.popup-2#congratulation
+		.icon-checked
+			img(src="./assets/icons/1.png", alt="")
+		h2.main-title Congratulation!
+		h3 You have successfully 
+			span Registration!
+		p Your account has been created. Chúng tôi sẽ cung cấp tài khoản cho bạn qua mail sau khi xác nhận thông tin 
+		a.btn.btn__submit--reverse(href="/") Back to home
